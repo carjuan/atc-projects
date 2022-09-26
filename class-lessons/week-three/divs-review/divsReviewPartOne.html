@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lets Review Divs</title>
+    <style type="text/css">
+        body {
+            border: 4px solid purple;
+        }
+        h1 {
+            background-color: antiquewhite;
+            text-align: center;
+            /* Cool? You can change the casing of any text inside and HTML element, fo example the h1 element */
+            text-transform: uppercase;
+
+        }
+         h3 {
+            background-color: bisque;
+            text-align: center;
+         }
+
+        #red-box {
+            width: 600px;
+            height: 600px;
+            background-color: red;
+        }
+
+        #blue-box {
+            width: 500px;
+            height: 500px;
+            background-color: blue;
+        }
+
+        #green-box {
+            width: 400px;
+            height: 400px;
+            background-color:green;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Lets Review Divs</h1> 
+    <h3>They are just containers for other elements to group and layout</h3>
+    <!-- Everything inside a div or any other element is called nesting -->
+   <div id="red-box">
+        <h2>Inside Red Box</h2>
+        <div id="blue-box">
+            <h2>Inside Blue Box</h2>
+            <div id="green-box">
+                <h2>Inside Green Box</h2>
+                <img src="https://source.unsplash.com/random/150x150" alt="random photo">
+            </div>
+        </div>
+   </div> 
+</body>
+</html>
