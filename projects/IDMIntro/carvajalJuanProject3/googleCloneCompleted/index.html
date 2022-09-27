@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Google Clone</title>
+	<style>
+		 * {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		 }
+		 body {
+			background-color: #202124;
+			color: #BDC1C6;
+			font-family: arial, sans-serif;
+			font-size: 14px;
+			height: 100vh;
+			overflow: hidden;
+		 }
+
+		/* ---------------------- Navbar container styles starts here ---------------------------- */
+
+		/* Navbar stands for navigational bar which is the menu you see in a horizontal line at the top of every website  */
+		#navbar-container {
+			margin-top: 20px;
+		}
+
+		 /* Notice that I am using the span here
+		 as I want to apply the same style to every span element in my HTML code
+		 If I want to specify any specific style, I use attributes: "id" */
+		 span {
+			/* We indicate to the browser that we only put padding right and left and not
+			top and bottom. the first 0px indicates to the browser that 0 top and bottom and the next value, 6px indicates left and right*/
+			padding: 0px 6px;
+			/* want to know more about padding? check this link: https://blog.hubspot.com/website/css-margin-vs-padding */
+
+			/* If there is available space in the box that is created by using span elements, you can align them vertically! */
+			vertical-align: middle;
+
+			/* Without display inline-block, the element ignores every margin-top, bottom, width,and height. So,
+			You have to tell the browser that you still want to display this element as inline but behave as block element! */
+			display: inline-block;
+		}
+
+
+		#about-text {
+			/* lets add some margin left to the about text in navbar to make more space on the left */
+			margin-left: 20px;
+		}
+
+		/* This is an important element, you see without margin-left on the box surrounding the "Gmail" text in the navbar, we cannot move the element all the way to the right */
+		/* You have used margin before, it is an interesting one. It helps you to create some space to either the left, top, right or bottom of an box */
+		#gmail-text {
+			/* We are using calc function to calculate the exact value for every screen. Say you indicate to have marign left of 200px exact. What if the screen is way bigger, then
+			you will need to adjust that value again to something like 400px and so on for every other bigger screen.  */
+			/* So calc function calculates that for you. */
+			margin-left: calc(100% - 420px)
+		}
+
+		#images-text {
+			margin-right: 18px;
+		}
+
+		#navbar-image-parent {
+			margin-right: 18px;
+		}
+
+		/* This translates to the browser that you want to style every <a> element in the page */
+		a {
+			/* You are telling the browser that you do not need the default underline on every link */
+			text-decoration: none;
+
+			/* Also you are telling the browser that the color of the text should be inherited from the parent who has a color property.
+			can you guess what is the parent element that has property of color? */
+			color: inherit;
+		}
+
+		/* This is really cool, this is our first introduction to pseudo classes. I will have links in OneDrive to learn more about it. Basically, we use colon ":" and then the pseudo class
+		which in this case is "hover". That means that everytime you hover your mouse over an element, change something about that element! the example bellow shows that on every link we hover over, change the
+		text decoration to underline which creates a bottom line under the element. */
+		a:hover {
+			text-decoration: underline;
+		}
+
+		#sign-in-button {
+			/* We indicate to the browser that we only put padding top: 10px, right: 25px, bottom: 10px, and finally left: 25px. */
+			padding: 10px 25px 10px 25px;
+			/* want to know more about padding? check this link: https://blog.hubspot.com/website/css-margin-vs-padding */
+			background-color: #8AB4F8;
+			/* remember that the difference between background-color and color is that color only changes the color of text */
+			color: #202124;
+			border-radius: 5px;
+		}
+
+		/* This is really cool, this is our first introduction to pseudo classes. I will have links in OneDrive to learn more about it. Basically, we use colon ":" and then the pseudo class
+		which in this case is "hover". That means that everytime you hover your mouse over an element, change something about that element! the example bellow shows that when we hover over this sign-in-button element, change
+		the background color and text-decoration */
+		#sign-in-button:hover {
+			background-color: #F8FBFF;
+			text-decoration: none;
+		}
+		
+		/* --------------------------- NAVIGATIONAL STYLE ENDS HERE ---------------------------------------*/
+
+		/* -----------------------------GOOGLE LOGO STYLE STARTS ------------------------------------------*/
+		#google-logo-container {
+			height: 170px;
+			text-align: center;
+			margin-top: 10vh;
+		}
+
+		#google-logo {
+			width: 300px;
+			height: 170px;
+			/* when the width and the height of an element is specify, we can use margin auto to center the element in that block level */
+			margin: auto;
+		}
+
+		#google-logo-image {
+			/* this percentage is based on the width of the parent container which is id=google-log-span */
+			/* which is in total 150px. There for the margin top will roughly the 50% of 150px which calculates to 69px */
+			margin-top: 25%;
+		}
+
+		/*----------------------------- GOOGLE LOGO STYLE ENDS HERE ---------------------------------------*/
+
+
+		/*------------------------------ SEARCH-BOX STYLE STARTS HERE -------------------------------------*/
+		#search-box-container {
+			/* Interesting, what can vh be? take a look at this link: https://www.w3schools.com/cssref/css_units.asp */
+			margin-top: 2vh;
+			height: 60px;
+		}
+
+		#search-box {
+			/* As long there is a specific width in an div element, you can set margin: auto to center automatically without using margin-left! */
+			margin: auto;
+			width: 584px;
+			height: 44px;
+			border: 1px solid #5F6368;
+			border-radius: 24px;
+		}
+
+
+		#search-icon {
+			/* We need to set the margin top and left to move the icon a little bit within the blue box */
+			margin-top: 12px;
+			margin-left: 12px;
+		}
+
+		/*------------------------------ SEARCH-BOX STYLE ENDS HERE -------------------------------------*/
+
+		/* ------------------------------BOTTOM BUTTONS STYLE STARTS ------------------------------------*/
+
+		#search-buttons-container {
+			margin-top: 20px;
+			text-align: center;
+			color: white;
+		}
+
+		#google-search-button {
+			padding: 10px 16px;
+			background-color: #303134;
+			margin-right: 10px;
+			border-radius: 4px;
+		}
+
+		#im-feeling-lucky-button {
+			padding: 10px 16px;
+			background-color: #303134;
+			border-radius: 4px;
+		}
+		#google-search-button:hover {
+			text-decoration: none;
+			outline: 1px solid #5F6368;
+		}
+		#im-feeling-lucky-button:hover {
+			text-decoration: none;
+			outline: 1px solid #5F6368;
+		}
+
+		/* ------------------------------BOTTOM BUTTONS STYLE ENDS ------------------------------------*/
+
+	</style>
+</head>
+<body>
+	<!-- In this first design challenge we will still use the <style></style> tag in <head></head>. Later challenges we will use something
+	a little bit more interesting that will allow us to be more organized -->
+	<!-- This week design challenge is building a clone of a very popular search engine! Google
+	The goal is to use only inline elements, div to group simple content for now. Later we will talk about SEMANTIC html -->
+	
+	<!-- lets start creating the very top bar -->
+	<!-- Lets starts by putting each menu item in a box that we can control later. In this case this box is the container for all navigational items -->
+	 <div id="navbar-container">
+		<span id="about-text"><a href="https://about.google/?fg=1&utm_source=google-CA&utm_medium=referral&utm_campaign=hp-header">About</a></span>
+		<span id="store-text"><a href="https://store.google.com/CA?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-CA">Store</a></span>
+		<span id="gmail-text"><a href="https://mail.google.com/mail/&ogbl">Gmail</a></span>
+		<span id="images-text"><a href="https://www.google.ca/imghp?hl=en&ogbl">Images</a></span>
+		
+		<span id="navbar-image-parent">
+			<img src="./images/square-icon.png" alt="">
+		</span>
+		<a id="sign-in-button" href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=GAZAmgQ">Sign in</a>
+	</div>
+
+	<div id="google-logo-container">
+		<div id="google-logo">
+			<img id="google-logo-image" src="images/google-logo.png" alt="google logo">
+		</div>
+	</div>
+
+	<div id="search-box-container">
+		<div id="search-box">
+			<img id="search-icon" src="images/search-icon.svg" alt="search icon in search bar">
+		</div>
+	</div>
+
+	<div id="search-buttons-container">
+		<a id="google-search-button" href="#">Google Search</a>
+		<a id="im-feeling-lucky-button" href="https://www.google.com/doodles">I'm Feeling Lucky</a>
+	</div>
+</body>
+</html>
