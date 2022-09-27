@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inline vs Block Level Elements</title>
+    <style>
+        body {
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        /* you see how the h1 is a BLOCK level elements because it takes the full width of the page by default and creates a new line
+        for new elements to go below it. */
+        h1 {
+            text-align: center;
+            background-color: aqua;
+            border: 2px solid black;
+        }
+
+        h2 {
+            text-align: center;
+            background-color: aquamarine;
+            border: 2px solid black;
+            
+            /* See how these properties of margin-top and margin-bottom work? they work as long as the element is a BLOCK element like h2 */
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        i {
+            background-color: yellow;
+        }
+
+
+         /* I am styling the INLINE elements like the <b></b> */
+        b {
+            border: 2px solid blue;
+            background-color: aquamarine;
+        }
+
+        #trick-heading {
+            text-align: start;
+        }
+
+        #span-width {
+            margin-right: 20px;
+            /* DISPLAY:INLINE-BLOCK tells the browser that INLINE elements should have some of the PROPERTIES of BLOCK elements like: width, height, margin-top, margin-bottom. */
+            display: inline-block;
+
+            /* The code below ONLY works if you have set DISPLAY: INLINE-BLOCK */
+            height: 200px;
+            border: 2px solid black;
+            background-color: aqua;
+        }
+
+        #span-width-height {
+            /* DISPLAY:INLINE-BLOCK tells the browser that INLINE elements should have some of the PROPERTIES of BLOCK elements like: width, height, margin-top, margin-bottom. */
+            display: inline-block;
+
+            height: 200px;
+            width: 400px;
+            border: 2px solid black;
+            background-color: aqua;
+        }
+        
+        #span-box-no-content {
+            display: inline-block;
+            width: 200px;
+            height: 100px;
+            background-color: aquamarine;
+        }
+        
+        #span-with-vertical-align {
+            display: inline-block;
+            width: 400px;
+            height: 200px;
+            border: 2px solid black;
+            background-color: aqua;
+            vertical-align: top;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <!-- GO TO THIS WEBSITE TO CHECK MORE ABOUT INLINE VS BLOCK ELEMENTS: https://www.w3schools.com/html/html_blocks.asp -->
+
+    <!-- every BLOCK element will take 100% width by default of the available space of the page in the screen -->
+    <h1>But wait! we can do <i>MORE</i> with <b><i>INLINE</i></b> elements... more than <b><i>BUTTONS</i></b></h1>
+
+    <h2>I <b><i>lied</i></b>... we can have width and height on <i>INLINE</i> elements...</h2>
+    <h2 id="trick-heading">- We just need a little <i>TRICK:</i></h2>
+    <h3>- <b><i>display: inline-block</i> in our CSS</b></h3>
+
+    <!-- Remember, span elements are INLINE elements to group content and style it just like DIV for the block elements -->
+    <!-- For the following spans to work, we need to set the CSS property DISPLAY: INLINE-BLOCK which means, span are inline elements but HAVE same properties of the BLOCK elements -->
+    <!-- Check the styles for these ids in the <style></style> section  -->
+    <span id="span-width">This span element has height</span>
+    <span id="span-width-height">This span element has width and height</span>
+    
+    <h2>What if you do not have content or text inside <b><i>INLINE</i></b> elements?</h2>
+    <h3>- Things do not seem to <b><i>ALIGN</i></b> properly</h3>
+
+    <span id="span-width">This span element has height</span>
+    <span id="span-width-height">This span element has width and height</span>
+
+    <!-- Notice that you do not need content to create width and height, as long as you set DISPLAY:INLINE-BLOCK for each span to style -->
+    <span id="span-box-no-content"></span>
+
+    <h2>Meet <b><i>VERTICAL-ALIGN</i></b> CSS property to solve this problem</h2>
+    <h3>- We can set <b><i>vertical-align</i></b> to each element to align them vertially</h3>
+
+    <span id="span-width">This span element has height</span>
+    
+    <!-- this INLINE element now has vertical-align:top set in CSS and now we can move it to the top -->
+    <span id="span-with-vertical-align">This span element has width and height</span>
+
+    <!-- When there is not content, and you set DISPLAY: INLINE-BLOCK and add width and height, you create space for other INLINE elements of the height you specified. That is why
+    you have to set vertical-align for the other elements that are INLINE to be aligned.  -->
+    <span id="span-box-no-content"></span>
+</body>
+</html>
