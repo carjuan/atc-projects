@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yahoo navbar</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+         body {
+            padding-left: 80px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 600;
+         }
+
+        #yahoo-search-bar-container {
+            margin-top: 20px;
+        }
+
+        #search-box {
+            width: 800px;
+            height: 48px;
+            border: 1px solid #188FFF;
+            /* we need to set the div block level element to inline-block as we need it to sit next to the image but still have block level properties, like
+            width, height, margin-top margin-bottom, etc. */
+            display: inline-block;
+            border-radius: 5px;
+            margin-left: 40px;
+            vertical-align: top;
+        }
+
+        #search-icon-box {
+            width: 103px;
+            height: 46px;
+            background-color: #188FFF;
+            display: inline-block;
+            margin-left: 87%;
+            cursor: pointer;
+        }
+
+        #search-icon-box:hover {
+            background-color: #0F69FF;
+            cursor: pointer;
+        }
+
+
+        #search-icon {
+            margin-left: 42%;
+            margin-top: 12%;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+        /* ------------------------LISTS STYLE STARTS ----------------------------*/
+        #menu-items-container {
+            margin-top: 20px;
+        }
+        ul {
+            list-style-type: none;
+        }
+        
+        li {
+            cursor: pointer;
+        }
+        span {
+            display: inline-block;
+            margin-right: 30px;
+        }
+
+        #mail-icon {
+            vertical-align: sub;
+            margin-right: 5px;
+        }
+        /* ------------------------LISTS STYLE ENDS ----------------------------*/
+
+    </style>
+</head>
+<body>
+    <div id="yahoo-search-bar-container">
+        <!-- since both the logo image and the search bar are next to each other, we need to have two inline elements
+        as they are place one next to the other -->
+        <img src="images/yahoo-logo.png" alt="yahoo logo">
+        <span id="search-box">
+            <span id="search-icon-box">
+                <img id="search-icon" src="images/search-icon.svg" alt="">
+            </span>
+        </span>
+    </div>
+
+    <div id="menu-items-container">
+        <ul>
+            <!-- <li></li> elements are block elements by default, so by surrounding them in a inline element, like <span></span>, we can put them next to each other. Make sure to set
+            span elements to inline-block so that they know they can sit next to each other and also have block level properties -->
+            <span>
+                <li>
+                    <img id="mail-icon" src="images/mail-icon.svg" alt="">
+                    Mail
+                </li>
+            </span>
+            <span>
+                <li>Coronavirus</li>
+            </span>
+            <span>
+                <li>News</li>
+            </span>
+            <span>
+                <li>Sports</li>
+            </span>
+            <span>
+                <li>Finance</li>
+            </span>
+            <span>
+                <li>Celebrity</li>
+            </span>
+            <span>
+                <li>Style</li>
+            </span>
+            <span>
+                <li>Movies</li>
+            </span>
+            <span>
+                <li>More...</li>
+            </span>
+        </ul>
+    </div>
+</body>
+</html>
