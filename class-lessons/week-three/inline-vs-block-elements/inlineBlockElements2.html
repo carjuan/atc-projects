@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inline vs Block Level Elements</title>
+    <style>
+        body {
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            background-color: aqua;
+        }
+         h2 {
+            text-align: center;
+            background-color: aquamarine;
+         }
+
+        p {
+            border: 2px solid green;
+            /* As you have seen before, you can control the width of block level elements, just say width: value; */
+            width: 800px;
+            margin: auto;
+        }
+        /* however, span elements cannot have a width value by default */
+        span {
+            border: 2px solid saddlebrown;
+            /* this width wont work because the width of INLINE elements is always the WIDTH of its CONTENT */
+            /* you can change the value as much as you want and nothing is going to happen */
+            width: 1000px;
+            /* this height wont work because the height of INLINE elements is always the WIDTH of its CONTENT */
+            /* you can change the value as much as you want and nothing is going to happen */
+            height: 200px;
+        
+            /* this margin wont work either for INLINE elements*/
+            margin-top: 50px;
+        }
+
+        a {
+            border: 2px solid blue;
+        }
+
+        i {
+            background-color: yellow;
+        }
+
+        /* Notice how the <ul> element is also a block level element since it takes the full width of the page and we adjust width, height, margin, padding, etc. */
+        ul {
+            border: 4px solid black;
+            height: 280px
+        }
+
+        li {
+            border: 4px solid orange;
+            /* See here again, the <li> element is also a BLOCK element since we can adjust the margin, height, and width */
+            margin-top: 20px;
+            /* Try changing the width and height of these elements and see what happens! */
+        }
+
+        #list-width {
+            width: 200px;
+        }
+
+        #list-height {
+            height: 70px;
+        }
+
+        #list-margin {
+            margin-top: 80px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- GO TO THIS WEBSITE TO CHECK MORE ABOUT INLINE VS BLOCK ELEMENTS: https://www.w3schools.com/html/html_blocks.asp -->
+
+    <!-- every BLOCK element will take 100% width of the available space of the page in the screen -->
+    <h1>Then, what are the differences of INLINE and BLOCK level elements?</h1>
+
+    <h2>We can control the width of <em>BLOCK</em> elements</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta quod deleniti deserunt nemo? Ipsum corporis sapiente nam ea harum magnam adipisci perferendis quasi at, error, deleniti, repudiandae nostrum quos nihil!</p>
+
+    <!-- On the other hand, INLINE elements only take the width of its content -->
+    <!-- the <span></span> element is the equivalent of divs to group things and style them together BUT do not take the full width of the page by default as compared BLOCK elements -->
+
+    <!-- if you notice, the <i></i> element below is an inline element since it just formats the text inside without taking the full width of the page or creaing a new line like the BLOCK elements -->
+    <h2>But we cannot control the width or height of <i>INLINE</i> elements</h2>
+    <span>Inline Elements vs</span>
+    <span>Block Level Elements</span>
+
+    <h2>And we cannot control the margin-top or margin-bottom of <i>INLINE</i> elements</h2>
+    <!-- span is an INLINE element -->
+    <span>Inline Elements vs</span>
+    <span>Block Level Elements</span>
+    <!-- <a></a> is an inline element. Notice that both links appear next to each other -->
+    <a href="">A Link</a><a href="">A link</a>
+
+    <!-- Notice the <p></p> element or BLOCK element how we can control the width and height, margin,etc. -->
+    <h2>So the properties of the BLOCK elements like <i>DIV</i> and <i>P</i> are:</h2>
+    
+    <!-- Notice again, we are using other BLOCK level elements like <ul></ul> and <li></li> since the create a new line in the page and take the full width of the page -->
+    <!-- In this case, ul element is behaving like a container for the lists items, just like <div></div> but divs can have other elements inside -->
+    <ul>
+        <li id="list-width">Width</li>
+        <li id="list-height">Height</li>
+        <li id="list-margin">Margin</li>
+    </ul>
+</body>
+</html>

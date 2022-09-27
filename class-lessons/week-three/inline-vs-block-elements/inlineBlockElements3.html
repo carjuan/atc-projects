@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inline vs Block Level Elements</title>
+    <style>
+        body {
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        /* you see how the h1 is a BLOCK level elements because it takes the full width of the page by default and creates a new line
+        for new elements to go below it. */
+        h1 {
+            text-align: center;
+            background-color: aqua;
+            border: 2px solid black;
+        }
+         h2 {
+            text-align: center;
+            background-color: aquamarine;
+            border: 2px solid black;
+            
+            /* See how these properties of margin-top and margin-bottom work? they work as long as the element is a BLOCK element like h2 */
+            margin-top: 50px;
+            margin-bottom: 50px;
+         }
+
+        p {
+            border: 2px solid green;
+            /* As you have seen before, you can control the width of block level elements, just say width: value; */
+            width: 800px;
+            margin: auto;
+        }
+        /* however, span elements cannot have a width value by default */
+        span {
+            border: 2px solid saddlebrown;
+            /* this width wont work because the width of INLINE elements is always the WIDTH of its CONTENT */
+            /* you can change the value as much as you want and nothing is going to happen */
+            width: 1000px;
+            /* this height wont work because the height of INLINE elements is always the WIDTH of its CONTENT */
+            /* you can change the value as much as you want and nothing is going to happen */
+            height: 200px;
+        
+            /* this margin wont work either for INLINE elements*/
+            margin-top: 50px;
+
+            /* but we CAN add padding to INLINE elements */
+            padding: 14px;
+        }
+
+
+        i {
+            background-color: yellow;
+        }
+
+
+         /* I am styling the INLINE elements like the <b></b> */
+        b {
+            border: 2px solid blue;
+            background-color: aquamarine;
+        }
+
+        #block-element-padding {
+            margin-top: 30px;
+            padding: 20px;
+        }
+
+        /* with some style, our link element that is an INLINE element can be displayed like a button now! */
+        #link-button {
+            border: 4px solid sandybrown;
+            /* remember, padding creates space around the content of the box. Margin, on the other hand, creates space outside of the box. */
+            padding: 20px;
+            /* Notice that margin-left and margin-right work for INLINE elements whereas margin-top and margin-bottom DO NOT work. */
+            margin-left: 40%;
+
+            background-color: beige;
+
+            color: saddlebrown;
+            
+            /* This removes the underline that <a> elements have by default */
+            text-decoration: none;
+
+            font-size: 18px;
+            border-radius: 10px;
+
+        }
+    </style>
+</head>
+<body>
+
+    <!-- GO TO THIS WEBSITE TO CHECK MORE ABOUT INLINE VS BLOCK ELEMENTS: https://www.w3schools.com/html/html_blocks.asp -->
+
+    <!-- every BLOCK element will take 100% width by default of the available space of the page in the screen -->
+    <h1>Then... what can we do with <i>INLINE</i> elements</h1>
+
+    <h2>We can <i>STYLE</i> content inside a paragraph individually</h2>
+    <h3>- You have been using <i>INLINE</i> elements all this time</h3>
+
+    <p>Lorem ipsum <b>dolor</b> sit amet consectetur, adipisicing elit. Soluta quod deleniti deserunt nemo? Ipsum corporis <b>sapiente</b>nam ea harum magnam adipisci perferendis quasi at, error, deleniti, repudiandae nostrum quos <b>nihil!</b></p>
+
+
+    <!-- if you notice, the <i></i> element below is an inline element since it just formats the text inside without taking the full width of the page or creaing a new line like the BLOCK elements -->
+    <h2>We can add <i>PADDING</i> to <i>INLINE</i> elements as well as <i>BLOCK</i> elements</h2>
+
+    <h3>-<i>PADDING</i> is used to create space around an element's content, inside of any defined borders</h3>
+    <span>Inline Elements vs</span>
+    <span>Block Level Elements</span>
+    <p id="block-element-padding">THIS IS A BLOCK ELEMENT WITH <b><i>PADDING</i></b> - SPACE AROUND THIS CONTENT</p>
+
+    <h2>With this idea of <b><i>PADDING</i></b> in mind we can create interesting things, like <b><i>BUTTONS</i></b></h2>
+    
+    <!-- <a></a> is an inline element. -->
+    <a id="link-button" href="">This link now looks like a button</a>
+    
+    <h2>Rememeber that <b><i>INLINE</i></b> elements width is only the same as ITS <b><i>CONTENT</i></b></h2>
+    <a id="link-button" href="">Click Me</a>
+
+</body>
+</html>
