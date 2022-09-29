@@ -22,9 +22,9 @@
         #search-box {
             width: 800px;
             height: 48px;
-            border: 1px solid #188FFF;
+            outline: 1px solid #188FFF;
             /* we need to set the div block level element to inline-block as we need it to sit next to the image but still have block level properties, like
-            width, height, margin-top margin-bottom, etc. */
+            height, margin-top margin-bottom, etc. */
             display: inline-block;
             border-radius: 5px;
             margin-left: 40px;
@@ -32,12 +32,14 @@
         }
 
         #search-icon-box {
-            width: 103px;
-            height: 46px;
+            width: 104px;
+            height: 48px;
             background-color: #188FFF;
             display: inline-block;
             margin-left: 87%;
             cursor: pointer;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
         }
 
         #search-icon-box:hover {
