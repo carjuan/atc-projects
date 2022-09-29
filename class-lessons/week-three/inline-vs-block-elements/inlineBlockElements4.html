@@ -40,7 +40,7 @@
             text-align: start;
         }
 
-        #span-width {
+        #span-height {
             margin-right: 20px;
             /* DISPLAY:INLINE-BLOCK tells the browser that INLINE elements should have some of the PROPERTIES of BLOCK elements like: width, height, margin-top, margin-bottom. */
             display: inline-block;
@@ -77,6 +77,30 @@
             vertical-align: top;
         }
 
+        #span-text1 {
+            outline: 2px solid blue;
+            height: 200px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        #span-text2 {
+            vertical-align: middle;
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+
+        #text {
+            font-size: 60px;
+        }
+
+        #more-text {
+        font-size: 10px;
+        }
+
 
     </style>
 </head>
@@ -94,22 +118,22 @@
     <!-- Remember, span elements are INLINE elements to group content and style it just like DIV for the block elements -->
     <!-- For the following spans to work, we need to set the CSS property DISPLAY: INLINE-BLOCK which means, span are inline elements but HAVE same properties of the BLOCK elements -->
     <!-- Check the styles for these ids in the <style></style> section  -->
-    <span id="span-width">This span element has height</span>
+    <span id="span-height">This span element has height</span>
     <span id="span-width-height">This span element has width and height</span>
     
     <h2>What if you do not have content or text inside <b><i>INLINE</i></b> elements?</h2>
     <h3>- Things do not seem to <b><i>ALIGN</i></b> properly</h3>
 
-    <span id="span-width">This span element has height</span>
+    <span id="span-height">This span element has height</span>
     <span id="span-width-height">This span element has width and height</span>
 
     <!-- Notice that you do not need content to create width and height, as long as you set DISPLAY:INLINE-BLOCK for each span to style -->
     <span id="span-box-no-content"></span>
 
     <h2>Meet <b><i>VERTICAL-ALIGN</i></b> CSS property to solve this problem</h2>
-    <h3>- We can set <b><i>vertical-align</i></b> to each element to align them vertially</h3>
+    <h3>- We can set <b><i>vertical-align</i></b> to each element to align them vertically</h3>
 
-    <span id="span-width">This span element has height</span>
+    <span id="span-height">This span element has height</span>
     
     <!-- this INLINE element now has vertical-align:top set in CSS and now we can move it to the top -->
     <span id="span-with-vertical-align">This span element has width and height</span>
@@ -117,5 +141,20 @@
     <!-- When there is not content, and you set DISPLAY: INLINE-BLOCK and add width and height, you create space for other INLINE elements of the height you specified. That is why
     you have to set vertical-align for the other elements that are INLINE to be aligned.  -->
     <span id="span-box-no-content"></span>
+
+    <h2>What about images which are also <b><i>INLINE elements?</i></b></h2>
+
+    <span id="span-text1">This is some text surrounded by a span element</span>
+    
+    <span id="span-text2">This is <b>also</b> text surrounded by a span elemet</span>
+
+    <img src="https://source.unsplash.com/random/150x150" alt="">
+
+    <h2>Lets see it in another way, with <b><i>text!</i></b></h2>
+
+    <span id="text">TEXT
+        <span id="more-text">more text</span>
+    </span>
+
 </body>
 </html>
