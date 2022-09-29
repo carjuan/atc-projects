@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Walmart Navbar Clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;500&display=swap" rel="stylesheet"> 
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-size: 17px;
+        }
+        #nav {
+            margin-top: 20px;
+            display: inline-block;
+            border-bottom: none;
+            margin-bottom: 20px;
+        }
+
+        #logo {
+            width: 210px;
+            height: 50px;
+        }
+
+        #search-bar-container {
+            outline: 1px solid #0072CE;
+            width: 800px;
+            height: 46px;
+            display: inline-block;
+            vertical-align:top;
+            margin-left: 30px;
+        }
+
+        #search-bar-text {
+            color: #808080;
+            font-weight: 300;
+            padding: 13px;
+            display: inline-block;
+        }
+
+        #search-bar-icon {
+            background-color: #0072CE;
+            width: 60px;
+            height: 46px;
+            margin-left: 521px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        #search-icon {
+            margin-top: 13px;
+            margin-left: 20px
+        }
+
+        #departments-container {
+            width: 185px;
+            height: 44px;
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+            display: inline-block;
+            background-color: #0072CE;
+            color: white;
+        }
+
+        #departments {
+            padding: 14px 14px 0px 14px;
+            display: inline-block;
+            color: aliceblue;
+        }
+        #white-arrow {
+            width: 18px;
+            height: 12px;
+            margin-left: 8%;
+            vertical-align: middle;
+        }
+
+        div {
+            border-bottom: 2px solid #0072CE;
+        }
+        ul {
+            display: inline-block;
+            color: #0072CE;
+            list-style-type: none;
+            margin: 0;
+        }
+        li {
+            display: inline;
+            margin-right: 1.5rem;
+        }
+        
+        /* Here we know that we have to set a margin right to the list item Thanksgiving as there is a space between that <li></li> element and the green bucket icon */
+        #thanks-giving {
+            margin-right: 160px;
+        }
+
+        #bucket {
+            vertical-align: bottom;
+        }
+
+        #green-shop-grocery {
+            color: #427D00;
+            margin-left: 8px;
+            margin-right: 1.5rem;
+        }
+
+
+        #map {
+            vertical-align: bottom;
+        }
+
+        #store-finder {
+            margin-right: 1.5rem;
+            margin-left: 8px;
+        }
+
+        #flyers-icon {
+            vertical-align: bottom;
+        }
+
+
+        #flyers {
+            margin-left: 8px;
+            margin-right: 1.5rem;
+        }
+
+        #no-margin-right {
+            margin-right: 0;
+        }
+
+        #arrow-blue {
+            width: 16px;
+            height: 10px;
+            margin-left: 10px;
+        }
+
+        #cart {
+            vertical-align: bottom;
+            margin-left: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div id="nav">
+            <img id="logo" src="images/walmart-logo.png" alt="">
+            <span id="search-bar-container">
+                <span id="search-bar-text">What are you looking for?</span>
+                <span id="search-bar-icon">
+                    <img id="search-icon" src="images/search-icon.svg" alt="">
+                </span>
+            </span>
+        </div>
+        <div>
+            <!-- Just like divs groups contents for block level elements, span also can group elements that can sit next to each other or go with the flow -->
+            <span id="departments-container">
+                <span id="departments">Departments</span>
+                <img id="white-arrow" src="images/arrow.png" alt="">
+            </span>
+
+            <!-- We have to set <ul></ul> to display: inline-block for the list to sit next to each other -->
+            <ul>
+                <!-- We also have to set each <li></li> item to display: inline. Otherwise, they will behave like block elements -->
+                <li>Halloween</li>
+                <li>Electronics</li>
+                <li>Clothing</li>
+                
+                <!-- Here we know that we have to set a margin right to the list item Thanksgiving as there is a space between that <li></li> element and the green bucket icon -->
+                <li id="thanks-giving">Thanksgiving</li>
+                
+                <!-- When you start inserting the icons, you will notice that they will not be properly aligned. We have to vertically aligned them to the bottom -->
+                <img id="bucket" src="images/bucket.png" alt="">
+                <li id="green-shop-grocery">Shop Grocery</li>
+                <img id="map" src="images/map.png" alt="">
+                <li id="store-finder">Store Finder</li>
+                <img id="flyers-icon" src="images/flyers.png" alt="">
+                <li id="flyers">Flyers</li>
+                
+                <!-- Notice that we have set a margin right to every <li></li> element, but we do not need that much of margin for the Sign in text because we need the blue arrow a little bit closer to it -->
+                <li id="no-margin-right">Sign in</li>
+                <img id="arrow-blue" src="images/arrow-blue.png" alt="">
+                <img id="cart" src="images/cart.png" alt="">
+            </ul>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inline vs Block Level Elements</title>
+    <style>
+        body {
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        h2 {
+            text-align: center;
+            background-color: aquamarine;
+            border: 2px solid black;
+            
+            /* See how these properties of margin-top and margin-bottom work? they work as long as the element is a BLOCK element like h2 */
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+
+        #span-height {
+            margin-right: 20px;
+
+            /* DISPLAY:INLINE-BLOCK tells the browser that INLINE elements should have some of the PROPERTIES of BLOCK elements like: width, height, margin-top, margin-bottom. */
+            display: inline-block;
+
+            /* The code below ONLY works if you have set DISPLAY: INLINE-BLOCK */
+            border: 2px solid black;
+            background-color: aqua;
+        }
+
+        #span-width-height {
+            display: inline-block;
+            border: 2px solid black;
+            background-color: aqua;
+            vertical-align: super;
+        }
+
+        #font-size {
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- GO TO THIS WEBSITE TO CHECK MORE ABOUT INLINE VS BLOCK ELEMENTS: https://www.w3schools.com/html/html_blocks.asp -->
+
+
+    <h2>See how Vertical Align Behaves</h2>
+    <span id="font-size">HELLO</span>
+    <span id="span-height">This span element has height</span>
+    <span id="span-width-height">This one has width and height</span>
+
+</body>
+</html>
