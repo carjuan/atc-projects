@@ -1,0 +1,67 @@
+"For the best editing experience, upload this .csv as a rubric in Microsoft Teams."
+
+"Practical Test One","100"
+""
+""
+,"Exceptional","8","Meets Most Requirements","6","Meets Some Requirements","4","Developing/Needs Improvement","2","Failed to Achieve Outcome","1"
+"Visual Layout
+
+- Page looks like the design provided or created
+- Margins, spacing and padding are similar 
+- Colors match design","
+",,"
+
+",,"
+",,"
+",,"
+",
+"20"
+"Content
+
+- Font types are similar to design
+- Font sizes/weight and alignment are similar to design
+- Spelling, grammar, punctuation, etc. ","
+",,"
+",,"
+",,"
+",,"
+",
+"20"
+"CSS and DIVS
+
+- Appropriate CSS selectors are used
+- CSS has proper indentation
+- Ids are used to select HTML elements
+- Proper CSS syntax is maintained: selector, curly braces, property, colon, value, semicolon
+- Only uses specified CSS properties
+","
+",,"
+",,"
+",,"
+",,"
+",
+"20"
+"HTML
+
+- HTML5 block elements & divs are used
+- Grouping and nesting of HTML elements adheres to best practice and is efficient
+- HTML document has proper indentation, demonstrating correct HTML hierarchy","
+",,"
+",,"
+",,"
+",,"
+",
+"20"
+"Edge
+
+- Submitted on time
+- Submitted correctly
+- Files are named correctly
+- Folders are named correctly","
+",,"
+",,"
+",,"
+",,"
+",
+"20"
+v.11p

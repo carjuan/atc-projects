@@ -1,0 +1,59 @@
+"For the best editing experience, upload this .csv as a rubric in Microsoft Teams."
+
+"Project 3 - Google Clone Rubric","100"
+""
+""
+,"Exceptional","5","Meets Most Requirements","4","Meets Some Requirements","3","Developing/Needs Improvement","2","Failed to Achieve Outcome","1"
+"Visual Layout
+
+- Page looks like the design provided or created
+- Margins, spacing and padding are similar 
+- Colors match design","
+",,"
+
+",,"
+",,"
+",,"
+",
+"25"
+"CSS and DIVS
+
+- Appropriate CSS selectors are used
+- CSS has proper indentation
+- Ids are used to select HTML elements
+- Proper CSS syntax is maintained: selector, curly braces, property, colon, value, semicolon
+- Only uses specified CSS properties
+- Font types are similar to design
+- Font sizes/weight and alignment are similar to design
+","
+",,"
+",,"
+",,"
+",,"
+",
+"25"
+"HTML
+
+- HTML5 block elements & divs are used
+- Grouping and nesting of HTML elements adheres to best practice and is efficient
+- HTML document has proper indentation, demonstrating correct HTML hierarchy
+- Spelling, grammar, punctuation, etc. ","
+",,"
+",,"
+",,"
+",,"
+",
+"25"
+"Edge
+
+- Submitted on time
+- Submitted correctly
+- Files are named correctly
+- Folders are named correctly","
+",,"
+",,"
+",,"
+",,"
+",
+"25"
+v.11p

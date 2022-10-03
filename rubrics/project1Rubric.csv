@@ -1,0 +1,49 @@
+"For the best editing experience, upload this .csv as a rubric in Microsoft Teams."
+
+"Project One - Assessment Criteria",""
+""
+""
+,"Exceptional","Meets Most Requirements","Meets Some Requirements","Developing/Needs Improvement","Failed to Achieve Outcome"
+"Assignment Specifications Met","•Folder named correctly
+•Handed in on time
+•pages are named index.html, places.html, hobbies.html
+","One of the criteria is not met:
+•Folder named correctly
+•Handed in on time
+• pages are named index.html, places.html, hobbies.html
+","Two or more criteria is not met:
+•Folder named correctly
+•Handed in on time
+• pages are named index.html, places.html, hobbies.html
+
+","Deadline is not met, and assignment specifications are incorrect","Did not complete"
+"Elements are used correctly","•HTML tags are closed properly
+•code is indented properly
+•All HTML elements are present
+","One criterion is not met:
+•HTML tags are closed properly
+•code is indented properly
+•All HTML elements are present
+","Two or more criteria is not met:
+•HTML tags are closed properly
+•code is indented properly
+•All HTML elements are present
+","•pages have many errors
+•doctype is not specified
+•elements are used incorrectly
+","Did not complete"
+"Specified Elements are used","•All of the specified elements are used:
+title, headings, text styling, paragraphs, colored text, links, images, lists
+","•most of the specified elements are used","•some of the specified elements are used","•few of the specified elements are used","Did not complete"
+"Content","•All specified content is included:
+•About you and your family, hobbies and favorite places are listed
+•Content is easily scannable - Heading and subheadings divide the content hierarchically, lists are used
+","•all specified content is included but contains grammatical errors or is lacking in clarity
+•Content is scannable - Heading and subheadings divide most of the content hierarchically, lists are used
+","•some of the specified content is included and or there are many grammatical or spelling errors and overall, it lacks clarity
+•Content is scannable - Heading and subheadings divide some of the content hierarchically, lists are used
+","•few of the specified content is included and or there are many grammatical or spelling errors and overall, it lacks clarity
+•Content is not easily scannable - Few if any, headings, and subheadings divide the content. Lists are not used effectively
+
+","Did not complete"
+v.11
