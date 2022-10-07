@@ -1,0 +1,67 @@
+"For the best editing experience, upload this .csv as a rubric in Microsoft Teams."
+
+"Project 4 - airbnb","100"
+""
+""
+,"Exceptional","5","Meets Most Requirements","4","Meets Some Requirements","3","Developing/Needs Improvement","2","Failed to Achieve Outcome","1"
+"Visual Layout
+
+- Page looks like the design provided or created
+- Margins, spacing and padding are similar 
+- Colors match design
+- Listings container is centered
+- Airbnb navbar occupies all horizontal space of the page
+- All hover effects are present: images, activities, user profile and mid navbar options","
+",,"
+
+",,"
+",,"
+",,"
+",
+"25"
+"CSS
+
+- Appropriate CSS selectors are used
+- CSS has proper indentation
+- classes are used to select HTML elements
+- Proper CSS syntax is maintained: selector, curly braces, property, colon, value, semicolon
+- Only uses specified CSS properties
+- Font types are similar to design
+- Font sizes/weight and alignment are similar to design
+- Utilizes box-shadow for hover effects
+- There are hover effects on all elements
+- CSS is organized in its own folder
+","
+",,"
+",,"
+",,"
+",,"
+",
+"25"
+"HTML
+
+- HTML5 block elements & divs are used
+- Proper semantic HTML is used forg grouping and nesting
+- HTML document has proper indentation, demonstrating correct HTML hierarchy
+- Spelling, grammar, punctuation, etc. 
+- Naming classes has proper meaning to the content being displayed on the page
+- Uses relative paths","
+",,"
+",,"
+",,"
+",,"
+",
+"25"
+"Edge
+
+- Submitted on time
+- Submitted correctly
+- Files are named correctly
+- Folders are named correctly","
+",,"
+",,"
+",,"
+",,"
+",
+"25"
+v.11p
