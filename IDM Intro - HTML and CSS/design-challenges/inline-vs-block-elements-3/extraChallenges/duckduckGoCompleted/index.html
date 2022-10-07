@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DuckDuckGo Design Challenge Starter File</title>
+    <style>
+        body {
+            margin: 0;
+            overflow-x: hidden;
+            overflow-y: hidden;
+
+        }
+        #main {
+            background-image: url("./images/background-dark.png");
+            background-position-x: 80%;
+            height: 100vh;
+            width: 100%;
+            border: 2px solid black;
+            background-size: cover;
+            
+
+        }
+        
+        #nav {
+            outline: 2px solid blue;
+        }
+        #toggle-container {
+            width: 72px;
+            border-radius: 100px;
+            background-color: #dbdbdb83;
+            height: 22px;
+            display: inline-block;
+            padding-top: 7px;
+            margin-bottom: 14px;
+        }
+
+        #toggle {
+            display: inline-block;
+            width: 30px;
+            height: 15px;
+            border-radius: 50px;
+            background-color: #444444;
+        }
+        #dot-underline-icon {
+            margin-left: 10px;
+            display: inline-block;
+        }
+
+        #logo {
+            outline: 1px solid red;
+            vertical-align: bottom;
+        }
+
+        #toggle-circle {
+            width: 13px;
+            background-color: white;
+            height: 13px;
+            margin-left: 2px;
+            border-radius: 50%;
+            display: inline-block;
+            vertical-align: top;
+        }
+    </style>
+</head>
+<body>
+    <!-- This design will challenge students with inline elements and how to work with spans and divs at the same time without using tools like flexbox. -->
+    <div id="main"> 
+        <div id="nav">
+            <img id="logo" src="images/duckduckgo-logo.svg" alt="">
+            <span id="toggle-container">
+                <img id="dot-underline-icon" src="images/dot-bar.icon.png" alt="">
+                <span id="toggle">
+                    <span id="toggle-circle"></span>
+                </span>
+            </span>
+        </div>
+    </div>
+</body>
+</html>
