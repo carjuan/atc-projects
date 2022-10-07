@@ -1,0 +1,17 @@
+#parent-div {
+    display: flex;
+    height: 500px;
+    align-items: center;
+}
+
+.child-div-1 {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+.child-div-2 {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}
