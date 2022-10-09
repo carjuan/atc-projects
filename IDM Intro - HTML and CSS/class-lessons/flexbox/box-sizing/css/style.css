@@ -1,0 +1,133 @@
+:root {
+  --bg: #242629;
+  --white: #fffffe;
+  --border: #eff0f6;
+  --card__background: #16161a;
+  --grey: #94a1b2;
+  --blue-dark: #0e172c;
+  --purple-ligth: #b69eff;
+  --purple-dark: #7f5af0;
+  --h1: 700 3.125rem / normal Inter;
+  --h2: 700 2rem / normal Inter;
+  --body1-regular: 400 1.125rem/1.75rem Inter;
+  --body1-bold: 700 1.125rem / normal Inter;
+}
+* {
+  padding: 0;
+  margin: 0;
+  /* Notice how giving the property of box-sizing: border-box
+  will change the width of the elements inside the flexbox container.
+  Without box-sizing border-box, the width you set will be that + any padding or border
+  you add later which will not be the fixed width you initially set for the box.
+  Ex. (WITHOUT box-sizing: border-box: --card: width: 400px, padding, 20px, border 2px = width 444px 
+  Ex. (WITH box-sizing: border-box: --card: width: 400px, padding, 20px, border 2px = width 400px */
+  box-sizing: border-box;
+}
+
+/**
+ * GLOBAL STYLES
+ */
+
+body {
+  font: var(--body1-regular);
+  padding: 5rem 1.5rem;
+  min-width: 18rem;
+  background-color: #242629;
+}
+
+h1 {
+  color: var(--white);
+  font: var(--h1);
+  margin: 1.1rem 0;
+}
+
+h2 {
+  color: var(--grey);
+  font: var(--h2);
+}
+
+.wrapper {
+  margin: auto;
+  max-width: 1450px;
+}
+
+/**
+ * PRICING DESCRIPTION
+ */
+
+.description {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.description__tag {
+  color: var(--purple-dark);
+  font: var(--body1-bold);
+}
+
+.description__summary {
+  color: var(--grey);
+  font: var(--body1-regular);
+  line-height: 1.4;
+  max-width: 600px;
+  margin: auto;
+}
+
+/**
+ * PRICE SWITCH
+ */
+
+.switch {
+  display: flex;
+  justify-content: center;
+}
+
+.switch__option {
+  color: var(--white);
+  padding: 0.2rem 1.1rem;
+}
+
+.switch__toggle-outer {
+  width: 70px;
+  height: 30px;
+  background-color: var(--grey);
+  border-radius: 20px;
+  align-self: center;
+  padding-left: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.switch__toggle-inner {
+  width: 30%;
+  height: 70%;
+  background-color: var(--white);
+  border-radius: 50%;
+}
+
+/**
+ * PRICING CARDS
+ */
+
+.cards {
+  display: flex;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 900px;
+  justify-content: space-evenly;
+}
+
+.card {
+  width: 400px;
+  height: 800px;
+  background-color: var(--card__background);
+  border: 2px solid var(--border);
+  border-radius: 20px;
+  margin-bottom: 1.6rem;
+  padding: 20px;
+}
+
+.card__heading {
+  color: var(--white);
+}
