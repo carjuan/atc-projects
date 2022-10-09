@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Sección de precios</title>
+  </head>
+  <body>
+    <!-- Instead of naming things as pricing-description or pricing cards, I use general names
+    so those "COMPONENTS" can be resued for other types of cards or headings -->
+    <main class="wrapper">
+      <section>
+        <header class="description">
+          <span class="description__tag">PRICES</span>
+          <hgroup>
+            <h1 class="description__heading">
+              Unlock your creativity. <br />
+              Try our pro plan, for free!
+            </h1>
+            <p class="description__summary">
+              Having access to all the content for free hasn't been easier. Just
+              select your plan below and start your free trial for 7 days
+            </p>
+          </hgroup>
+        </header>
+
+        <div class="switch">
+          <span class="switch__option switch__option--left">Monthly</span>
+          <div class="switch__toggle-outer">
+            <div class="switch__toggle-inner"></div>
+          </div>
+          <span class="switch__option switch__option--right"
+            >Anually(-40%)</span
+          >
+        </div>
+        <!-- TODO: Still deciding on SEMANTICS HERE -->
+        <section class="cards">
+          <article class="card cards__basic">
+            <header>
+              <hgroup>
+                <h2 class="card__heading">Basic</h2>
+                <p class="card__summary">Individual plan</p>
+                <p class="card__summary">
+                  Lorem ipsum dolor sit amet doloroli sitiol conse cteur
+                  adipiscing elit
+                </p>
+              </hgroup>
+            </header>
+          </article>
+          <article class="card cards__pro"></article>
+          <article class="card cards__enterprise"></article>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
