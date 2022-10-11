@@ -1,0 +1,267 @@
+:root {
+    --bg: #242629;
+    --white: #fffffe;
+    --border: #eff0f6;
+    --card__background: #16161a;
+    --grey: #94a1b2;
+    --blue-dark: #0e172c;
+    --purple-ligth: #b69eff;
+    --purple-dark: #7f5af0;
+    --h1: 700 3.125rem / normal Inter;
+    --h2: 700 2rem / normal Inter;
+    --body1-regular: 400 1.125rem/1.75rem Inter;
+    --body1-bold: 700 1.125rem / normal Inter;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    /* Notice how giving the property of box-sizing: border-box
+  will change the width of the elements inside the flexbox container.
+  Without box-sizing border-box, the width you set will be that + any padding or border
+  you add later which will not be the fixed width you initially set for the box.
+  Ex. (WITHOUT box-sizing: border-box: --card: width: 400px, padding, 20px, border 2px = width 444px 
+  Ex. (WITH box-sizing: border-box: --card: width: 400px, padding, 20px, border 2px = width 400px */
+    box-sizing: border-box;
+}
+
+/**
+ * GLOBAL STYLES
+ */
+
+body {
+    /* rem units are calculated: user font-size setting * rem value. Example, 18px * 5rem = 18 * 5 = 90px. */
+    /* Using rems over pixels allow other users' settings to be reflected in your website.
+    If the user's font is 20px, rem units will scale accordingly to that. 
+    Example, if you have padding is 5rem and the user settings is 16px font-size, the calculated
+    padding will be padding: (16 * 5) 80px; */
+    font: var(--body1-regular);
+    padding: 5rem 1.5rem;
+    /* padding: 20px 18px; */
+    min-width: 18rem;
+    background-color: #242629;
+}
+
+h1 {
+    color: var(--white);
+    font: var(--h1);
+    margin: 1.1rem 0;
+}
+
+h2 {
+    color: var(--grey);
+    font: var(--h2);
+}
+
+.wrapper {
+    margin: auto;
+    max-width: 1450px;
+}
+
+/**
+ * PRICING DESCRIPTION
+ */
+
+.description {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.description__tag {
+    color: var(--purple-dark);
+    font: var(--body1-bold);
+}
+
+.description__summary {
+    color: var(--grey);
+    font: var(--body1-regular);
+    max-width: 600px;
+    margin: auto;
+}
+
+/**
+ * PRICE SWITCH
+ */
+
+.switch {
+    display: flex;
+    justify-content: center;
+}
+
+.switch__option {
+    color: var(--white);
+    padding: 0.2rem 1.1rem;
+}
+
+.switch__toggle-outer {
+    width: 4.375rem;
+    height: 1.875rem;
+    background-color: var(--grey);
+    border-radius: 20px;
+    align-self: center;
+    padding-left: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.switch__toggle-inner {
+    width: 30%;
+    height: 70%;
+    background-color: var(--white);
+    border-radius: 50%;
+}
+
+/**
+ * PRICING CARDS
+ */
+
+.cards {
+    display: flex;
+    margin: 2rem 0;
+    /* Rem units in margin, paddings, etc are a good idea since they scale with the user preferences */
+    /* If we set the margin fixed with pixels, then the margin will always be the same regardless of users' settings - font-size */
+    /* margin: 20px 0; */
+    flex-wrap: wrap;
+    align-items: center;
+    /* height: 40.625rem; */
+    justify-content: space-evenly;
+}
+
+.cards__option {
+    width: 26.25rem;
+    /* Rem units in margin, paddings, width, height, etc is a good idea since they scale with the user preferences */
+    /* If we set the width here fixed with pixels, then the width will always be the same regardless of users' settings - font-size */
+    /* Therefore, shrinking the content since the font is increasing but not the width of the box! */
+    /* width: 420px; */
+    background-color: var(--card__background);
+    border: 2px solid var(--border);
+    border-radius: 20px;
+    padding: 1.9rem 2rem;
+    margin-bottom: 1.6rem;
+}
+
+.cards__option--pro {
+    background-color: var(--purple-ligth);
+}
+
+.card__heading {
+    color: var(--white);
+    margin-bottom: 0;
+    font: var(--h1);
+}
+
+.card__heading--dark {
+    color: var(--blue-dark);
+}
+
+.card__label {
+    color: var(--grey);
+}
+
+.card__label--dark {
+    color: var(--blue-dark);
+}
+
+.card__summary {
+    color: var(--grey);
+    margin: 1.4rem 0;
+}
+
+.card__summary--dark {
+    color: var(--blue-dark);
+}
+
+.card__price {
+    color: var(--white);
+    font: var(--h1);
+}
+
+.card__price--dark {
+    color: var(--blue-dark);
+}
+
+.card__price-currency {
+    font: var(--body1-bold);
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+.card__price-currency--dark {
+    color: var(--blue-dark);
+}
+
+.card__price-type {
+    font: var(--body1-bold);
+    color: var(--grey);
+}
+
+.card__price-type--dark {
+    color: var(--blue-dark);
+}
+
+.card__subheading {
+    color: var(--white);
+    font: var(--body1-bold);
+    margin: 1.6rem 0;
+}
+
+.card__subheading--dark {
+    color: var(--blue-dark);
+}
+
+.card__list-item {
+    list-style-type: none;
+    color: var(--white);
+    margin: 0.8rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.card__list-item--dark {
+    list-style-type: none;
+    color: var(--blue-dark);
+    margin: 0.8rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.card__list-item-checkmark {
+    width: 1.625rem;
+    height: 1.625rem;
+    background-color: var(--purple-dark);
+    display: inline-block;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card__list-item-checkmark--dark {
+    background-color: var(--blue-dark);
+}
+
+.card__list-item-icon {
+    width: 1rem;
+    height: 1rem;
+}
+
+.card__button {
+    background: var(--purple-dark);
+    border: none;
+    padding: 1.2rem 0;
+    border-radius: 2rem;
+    width: 100%;
+    font: var(--body1-bold);
+    color: var(--white);
+    margin-top: 1.6rem;
+}
+
+.card__button--dark {
+    background: var(--blue-dark);
+}
+
+.card__list-item--disable {
+    opacity: 0.4;
+}
