@@ -1,0 +1,28 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    height: 6000px;
+    background-color: rgb(198, 200, 202);
+}
+
+#container-flex {
+    font-size: 400%;
+    display: flex;
+    background-color: black;
+    border: 2px solid black;
+    width: 80%;
+    margin: auto;
+    /* align-content only works when elements wrap! */
+    flex-wrap: wrap;
+
+    /* When elements wrap, if there is enough space in the container, wrapped elements can be aligned at the start,
+    center or end of the container.  */
+    align-content: flex-end;
+    /* There needs to be space for elements to create some space when they wrap! */
+    height: 1265px;
+}
+
+.container-flex-child {
+    width: 400px;
+    height: 200px;
+}

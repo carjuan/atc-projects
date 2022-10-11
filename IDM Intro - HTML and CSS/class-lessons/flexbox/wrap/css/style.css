@@ -1,0 +1,24 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    height: 6000px;
+    background-color: rgb(198, 200, 202);
+}
+
+#container-flex {
+    font-size: 400%;
+    display: flex;
+    background-color: black;
+    border: 2px solid black;
+    width: 80%;
+    margin: auto;
+    /* By defualt, items that have specified with and do not fit in the container, they will shrink */
+    /* But, if we use flex-wrap, flexbox will respect the width you set for the items inside the container and
+    move them below so that each element has its own defined width */
+    flex-wrap: wrap;
+}
+
+.container-flex-child {
+    width: 400px;
+    height: 200px;
+}
