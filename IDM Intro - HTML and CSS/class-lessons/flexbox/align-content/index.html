@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Flexbox Playground</title>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
+
+        <!-- We can now be more organized, and put our styles in a separate folder and file -->
+        <link rel="stylesheet" href="css/style.css" />
+
+        <!-- The following code is not important for the lesson. It is need it for to show some headings next to
+        the image you see below. Position property and ::before pseudo class will be reviewed later in the course -->
+        <style>
+            .flex-axis-image {
+                position: relative;
+                display: block;
+                width: 524px;
+                height: 523px;
+                margin: auto;
+            }
+
+            .flex-axis-image::before {
+                content: "justify-content";
+                font-size: 1.8rem;
+                font-weight: bold;
+                color: white;
+                width: 300px;
+                background-color: #f96f6a;
+                position: absolute;
+                display: inline-block;
+                left: -76%;
+                top: 20%;
+                padding: 20px;
+                text-transform: uppercase;
+            }
+
+            .flex-axis-image::after {
+                content: "align-items";
+                font-size: 1.8rem;
+                font-weight: bold;
+                color: white;
+                width: 300px;
+                background-color: #ffcd54;
+                position: absolute;
+                display: inline-block;
+                left: -76%;
+                top: 40%;
+                padding: 20px;
+                text-transform: uppercase;
+            }
+
+            .container-flex-child {
+                width: 150px;
+                font-size: 8rem;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>What is align-content in Flexbox?</h1>
+        <section id="container-flex">
+            <div class="container-flex-child" style="background-color: #56d6b2">1</div>
+            <div class="container-flex-child" style="background-color: #4dcccc">2</div>
+            <div class="container-flex-child" style="background-color: #1cb8e7">3</div>
+            <div class="container-flex-child" style="background-color: #3e8ae7">4</div>
+            <div class="container-flex-child" style="background-color: #a076e4">5</div>
+        </section>
+    </body>
+</html>
