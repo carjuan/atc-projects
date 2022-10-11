@@ -6,6 +6,7 @@ body {
 }
 
 #container-flex {
+    font-size: 400%;
     display: flex;
     background-color: black;
     border: 2px solid black;
