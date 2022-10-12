@@ -7,12 +7,12 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
 
         <!-- We can now be more organized, and put our styles in a separate folder and file -->
-        <link rel="stylesheet" href="css/style.css" />
 
         <!-- The following code is not important for the lesson. It is need it for to show some headings next to
         the image you see below. Position property and ::before pseudo class will be reviewed later in the course -->
         <style>
             .flex-axis-image {
+                /* The position property will be taught later in the course */
                 position: relative;
                 display: block;
                 width: 524px;
@@ -20,6 +20,7 @@
                 margin: auto;
             }
 
+            /* This code is not important right now, you can ignore it. We will learn about it later in the future. */
             .flex-axis-image::before {
                 content: "justify-content";
                 font-size: 1.8rem;
@@ -35,6 +36,46 @@
                 text-transform: uppercase;
             }
 
+            body {
+                font-family: "Open Sans", sans-serif;
+                text-align: center;
+                height: 6000px;
+                background-color: rgb(198, 200, 202);
+            }
+
+            h2 {
+                font-size: 200%;
+            }
+
+            p {
+                font-size: 145%;
+                background-color: #0b2d3f;
+                color: white;
+                width: 90%;
+                margin: 20px auto;
+            }
+
+            .sub-paragraph {
+                background-color: #6930c3;
+            }
+
+            .sub-highlight {
+                background-color: #80ffdb;
+                color: #0b2d3f;
+            }
+
+            .note {
+                text-align: start;
+                background-color: rgb(221, 221, 138);
+                color: #0b2d3f;
+                font-weight: bold;
+            }
+
+            b {
+                background-color: #6930c3;
+            }
+
+            /* This code is not important right now, you can ignore it. We will learn about it later in the future. */
             .flex-axis-image::after {
                 content: "align-items";
                 font-size: 1.8rem;
@@ -50,16 +91,42 @@
                 text-transform: uppercase;
             }
 
+            #container-flex {
+                background-color: #0b2d3f;
+                width: 90%;
+                margin: 0 auto;
+                border: 5px solid #0b2d3f;
+            }
+
             .container-flex-child {
                 width: 150px;
                 font-size: 8rem;
                 font-weight: bold;
             }
+
+            #cat-section {
+                width: 90%;
+                margin: auto;
+                border: 4px solid #0b2d3f;
+                border-radius: 20px;
+                padding: 40px;
+                margin-top: 60px;
+                background-color: #64919e;
+            }
+
+            #container-flex-image {
+                display: flex;
+                background-color: #0b2d3f;
+                width: 90%;
+                margin: 0 auto;
+                border: 5px solid #0b2d3f;
+                height: 600px;
+            }
         </style>
     </head>
 
     <body>
-        <h1>What is Flex Direction?</h1>
+        <h1>Flexbox Playground</h1>
         <div class="flex-axis-image">
             <img src="images/flex-axis.png" alt="" />
         </div>
@@ -68,13 +135,17 @@
             <div class="container-flex-child" style="background-color: #4dcccc">2</div>
             <div class="container-flex-child" style="background-color: #1cb8e7">3</div>
             <div class="container-flex-child" style="background-color: #3e8ae7">4</div>
-            <div class="container-flex-child" style="background-color: #a076e4">5</div>
         </section>
 
-        <p>All elements will stretch by default, even images!</p>
+        <section id="cat-section">
+            <p>All elements will <b>STRETCH</b> by default, even <b>IMAGES</b>!</p>
+            <p class="sub-highlight">
+                The image below is only 300x300 pixels. But in the box inside flex is 600x600, how can we fix that?
+            </p>
 
-        <section id="container-flex-image">
-            <img src="images/cat.jpg" alt="can with glasses on" />
+            <div id="container-flex-image">
+                <img src="images/cat.jpg" alt="can with glasses on" />
+            </div>
         </section>
     </body>
 </html>
