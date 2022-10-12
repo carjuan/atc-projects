@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Classes vs Ids</title>
+    </head>
+    <body>
+        <!-- 
+            You can have as many classes as you want for each element. Whereas Ids, you can only use ONE for that
+            element. That means you cannot reuse styles for other elements that share the same.
+            With ids, you need to create or repeat yourself if you want the style of element A to be the same on element B
+
+            IDs = they are used for single-use elements
+            IDS = (they have meaning to the browser) like navigating to a certain part of the page (linkning internally)
+
+            Class: Use classes for multi-use elements
+            Class: They do not have any meaning to the browser, their only purpose is to apply
+                    styles to different elements on the page, sharing the same style among them.
+        -->
+        "></style>
+        <section id="section-classes">
+            <a class="button" href="">Click</a>
+            <a class="button" href="">Click</a>
+            <a class="button danger-button" href="">Click</a>
+            <a class="button button-no-margin" href="">Click</a>
+        </section>
+        <section id="section-ids">
+            <a id="button-1" href="">Click</a>
+            <a id="button-2" href="">Click</a>
+            <a id="button-3" href="">Click</a>
+            <a id="button-4" href="">Click</a>
+        </section>
+    </body>
+</html>
