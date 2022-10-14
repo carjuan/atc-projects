@@ -1,167 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet"> 
-    <title>Pricing Panel Challenge</title>
-    <style type="text/css">
-        /* resets every marign and padding on an element */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            background-color: #f5f5dc;
-            font-family: 'Poppins', sans-serif;
-            
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet" />
+        <title>Pricing Panel Challenge</title>
+        <style type="text/css">
+            /* resets every marign and padding on an element */
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                background-color: #f5f5dc;
+                font-family: "Poppins", sans-serif;
+            }
+            h2,
+            h1 {
+                color: #6a62b6;
+            }
 
-        }
-        h2, h1 {
-            color: #6A62B6;
-        }
+            h1 {
+                padding: 40px 0px;
+                text-align: center;
+            }
+            #pricing-panel {
+                width: 90vw;
+                height: 54;
+                background-color: #e1ddfc;
+                margin: auto;
+                margin-top: 5%;
+                margin-bottom: 5%;
+                border-radius: 10px;
+                text-align: center;
+                padding-bottom: 6%;
+            }
 
-        h1 {
-            padding: 40px 0px;
-            text-align: center;
-        }
-        #pricing-panel {
-            width: 90vw;
-            height: 70vw;
-            background-color: #E1DDFC;
-            margin: auto;
-            margin-top: 5%;
-            border-radius: 10px;
-            text-align: center;
-        }
+            #left-pricing {
+                width: 300px;
+                background-color: #f5f5dc;
+                display: inline-block;
+                margin-left: 5%;
+                margin-right: 40px;
+                border-radius: 15px;
+                text-align: center;
+                vertical-align: top;
+                color: #9b9b9c;
+                padding: 10px 0 40px 0;
+            }
 
-        #left-pricing {
-            width: 300px;
-            height: 58%;
-            background-color: #f5f5dc;
-            display: inline-block;
-            margin-left: 5%;
-            margin-right: 40px;
-            border-radius: 15px;
-            text-align: center;
-            vertical-align: top;
-            color: #9B9B9C;
-        }
+            #middle-pricing {
+                width: 300px;
+                background-color: #7068b9;
+                display: inline-block;
+                text-align: center;
+                margin-right: 40px;
+                border-radius: 15px;
+                color: #f5f5dc;
+                padding: 10px 0 40px 0;
+            }
 
-        #middle-pricing {
-            width: 300px;
-            height: 58%;
-            background-color: #7068B9;
-            display: inline-block;
-            text-align: center;
-            margin-right: 40px;
-            border-radius: 15px;
-            color: #f5f5dc;
-        }
+            #right-pricing {
+                width: 300px;
+                background-color: #f5f5dc;
+                padding: 10px 0 40px 0;
+                display: inline-block;
+                text-align: center;
+                border-radius: 15px;
+                vertical-align: top;
+                color: #9b9b9c;
+            }
 
-        #right-pricing {
-            width: 300px;
-            height: 58%;
-            background-color: #f5f5dc;
-            display: inline-block;
-            text-align: center;
-            border-radius: 15px;
-            vertical-align: top;
-            color: #9B9B9C;
-        }
+            #price {
+                font-size: 30px;
+                color: #6a62b6;
+                font-weight: 600;
+                text-transform: uppercase;
+                display: inline-block;
+                margin-top: 20%;
+            }
 
-        #price {
-            font-size: 30px;
-            color: #6A62B6;
-            font-weight: 600;
-            text-transform: uppercase;
-            display: inline-block;
-            margin-top: 20%;
-        }
-        
-        #middle-price {
-            margin-top: 20%;
-            display: inline-block;
-            font-size: 30px;
-            font-weight: 600;
-        }
+            #middle-price {
+                margin-top: 20%;
+                display: inline-block;
+                font-size: 30px;
+                font-weight: 600;
+            }
 
-        #small-team-heading {
-            color: white;
-        }
+            #small-team-heading {
+                color: white;
+            }
 
-        img {
-            width: 250px;
-            height: 200px;
-        }
+            img {
+                width: 250px;
+                height: 200px;
+            }
 
-        p {
-            padding: 20px;
-            font-weight: 300;
-        }
+            p {
+                padding: 20px;
+                font-weight: 300;
+            }
 
-        #left-price-button {
-            text-decoration: none;
-            display: inline-block;
-            border: 2px solid #6A62B6;
-            border-radius: 10px;
-            padding: 8px 35px;
-            margin-top: 20px;
-            color: #6A62B6;
-        }
+            #left-price-button {
+                text-decoration: none;
+                display: inline-block;
+                border: 2px solid #6a62b6;
+                border-radius: 10px;
+                padding: 8px 35px;
+                margin-top: 20px;
+                color: #6a62b6;
+            }
 
-        #middle-price-button {
-            text-decoration: none;
-            display: inline-block;
-            background-color: #f5f5dc;
-            border-radius: 10px;
-            padding: 10px 35px;
-            margin-top: 20px;
-            color: #6A62B6;
-            font-weight: 600;
-        }
+            #middle-price-button {
+                text-decoration: none;
+                display: inline-block;
+                background-color: #f5f5dc;
+                border-radius: 10px;
+                padding: 10px 35px;
+                margin-top: 20px;
+                color: #6a62b6;
+                font-weight: 600;
+            }
 
-        #right-price-button {
-            text-decoration: none;
-            display: inline-block;
-            border: 2px solid #6A62B6;
-            border-radius: 10px;
-            padding: 8px 35px;
-            margin-top: 20px;
-            color: #6A62B6;
-        }
-    </style>
-</head>
-<body>
-   <div id="pricing-panel">
-        <h1>Choose the right plan for you.</h1>
-        <span id="left-pricing">
-            <img src="images/SVG/cook-illustration.svg" alt="Cook Illustration">
-            <h2>Personal</h2>
-            <p id="left-pricing-text">Tips and tricks for trendy angles & shots</p>
-            <span id="price">Free</span>
-            <!-- You can use a line break to stack two inline elements that were next to each other -->
-            <br>
-            <a id="left-price-button" href="">Sign Up</a>
-        </span>
-        <span id="middle-pricing">
-            <img src="images/SVG/singer-illustration.svg" alt="Singer Illustration">
-            <h2 id="small-team-heading">Small Team</h2>
-            <p>Smart Tools to record the world's next hit in seconds</p>
-            <span id="middle-price">$150</span>
-            <br>
-            <a id="middle-price-button" href="">Free Trial</a>
-        </span>
-        <span id="right-pricing">
-            <img src="images/SVG/social-media-illustration.svg" alt="Social Media Manager Illustration">
-            <h2>Enterprise</h2>
-            <p>Get all the tools you need to upgrade your followers account</p>
-            <span id="price">$400</span>
-            <br>
-            <a id="right-price-button" href="">Sign Up</a>
-        </span>
-   </div>
-</body>
+            #right-price-button {
+                text-decoration: none;
+                display: inline-block;
+                border: 2px solid #6a62b6;
+                border-radius: 10px;
+                padding: 8px 35px;
+                margin-top: 20px;
+                color: #6a62b6;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="pricing-panel">
+            <h1>Choose the right plan for you.</h1>
+            <span id="left-pricing">
+                <img src="images/SVG/cook-illustration.svg" alt="Cook Illustration" />
+                <h2>Personal</h2>
+                <p id="left-pricing-text">Tips and tricks for trendy angles & shots</p>
+                <span id="price">Free</span>
+                <!-- You can use a line break to stack two inline elements that were next to each other -->
+                <br />
+                <a id="left-price-button" href="">Sign Up</a>
+            </span>
+            <span id="middle-pricing">
+                <img src="images/SVG/singer-illustration.svg" alt="Singer Illustration" />
+                <h2 id="small-team-heading">Small Team</h2>
+                <p>Smart Tools to record the world's next hit in seconds</p>
+                <span id="middle-price">$150</span>
+                <br />
+                <a id="middle-price-button" href="">Free Trial</a>
+            </span>
+            <span id="right-pricing">
+                <img src="images/SVG/social-media-illustration.svg" alt="Social Media Manager Illustration" />
+                <h2>Enterprise</h2>
+                <p>Get all the tools you need to upgrade your followers account</p>
+                <span id="price">$400</span>
+                <br />
+                <a id="right-price-button" href="">Sign Up</a>
+            </span>
+        </div>
+    </body>
 </html>
