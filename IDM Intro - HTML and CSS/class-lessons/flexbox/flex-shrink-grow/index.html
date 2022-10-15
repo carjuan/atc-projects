@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Flexbox Playground</title>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
+
+        <!-- We can now be more organized, and put our styles in a separate folder and file -->
+
+        <!-- The following code is not important for the lesson. It is need it for to show some headings next to
+        the image you see below. Position property and ::before pseudo class will be reviewed later in the course -->
+        <style>
+            p {
+                font-size: 145%;
+                background-color: #0b2d3f;
+                color: white;
+                width: 90%;
+                margin: 20px auto;
+            }
+
+            .sub-paragraph {
+                background-color: #6930c3;
+            }
+
+            .sub-highlight {
+                background-color: #80ffdb;
+                color: #0b2d3f;
+            }
+
+            .note {
+                text-align: start;
+                background-color: rgb(221, 221, 138);
+                color: #0b2d3f;
+                font-weight: bold;
+            }
+
+            b {
+                background-color: #6930c3;
+            }
+            .flex-axis-image {
+                /* The position property will be taught later in the course */
+                position: relative;
+                display: block;
+                width: 524px;
+                height: 523px;
+                margin: auto;
+            }
+
+            /* This code is not important right now, you can ignore it. We will learn about it later in the future. */
+            .flex-axis-image::before {
+                content: "justify-content";
+                font-size: 1.8rem;
+                font-weight: bold;
+                color: white;
+                width: 300px;
+                background-color: #f96f6a;
+                position: absolute;
+                display: inline-block;
+                left: -76%;
+                top: 20%;
+                padding: 20px;
+                text-transform: uppercase;
+            }
+            /* This code is not important right now, you can ignore it. We will learn about it later in the future. */
+            .flex-axis-image::after {
+                content: "align-items";
+                font-size: 1.8rem;
+                font-weight: bold;
+                color: white;
+                width: 300px;
+                background-color: #ffc96a;
+                position: absolute;
+                display: inline-block;
+                left: -76%;
+                top: 50%;
+                padding: 20px;
+                text-transform: uppercase;
+            }
+
+            body {
+                font-family: "Open Sans", sans-serif;
+                text-align: center;
+                height: 6000px;
+                background-color: rgb(198, 200, 202);
+            }
+
+            h2 {
+                font-size: 200%;
+            }
+
+            #container-flex {
+                background-color: #0b2d3f;
+                width: 80%;
+                margin: 0 auto;
+                border: 5px solid #0b2d3f;
+            }
+
+            .container-flex-child {
+                width: 250px;
+                height: 200px;
+                font-size: 8rem;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>What is flex-shrink or grow?</h1>
+        <p>Flex-shrink will <b>shrink</b> your boxes more than the specified value</p>
+        <p>Flex-grow will <b>grow</b> your boxes more than the specified value</p>
+        <div class="flex-axis-image">
+            <img src="images/flex-axis.png" alt="" />
+        </div>
+        <section id="container-flex">
+            <div class="container-flex-child" style="background-color: #56d6b2"></div>
+            <div class="container-flex-child" style="background-color: #4dcccc"></div>
+            <div class="container-flex-child" style="background-color: #1cb8e7"></div>
+            <div class="container-flex-child" style="background-color: #3e8ae7"></div>
+        </section>
+    </body>
+</html>
