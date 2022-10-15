@@ -35,6 +35,21 @@
                 padding: 20px;
                 text-transform: uppercase;
             }
+            /* This code is not important right now, you can ignore it. We will learn about it later in the future. */
+            .flex-axis-image::after {
+                content: "align-items";
+                font-size: 1.8rem;
+                font-weight: bold;
+                color: white;
+                width: 300px;
+                background-color: #ffc96a;
+                position: absolute;
+                display: inline-block;
+                left: -76%;
+                top: 50%;
+                padding: 20px;
+                text-transform: uppercase;
+            }
 
             body {
                 font-family: "Open Sans", sans-serif;
@@ -75,22 +90,6 @@
                 background-color: #6930c3;
             }
 
-            /* This code is not important right now, you can ignore it. We will learn about it later in the future. */
-            .flex-axis-image::after {
-                content: "align-items";
-                font-size: 1.8rem;
-                font-weight: bold;
-                color: white;
-                width: 300px;
-                background-color: #ffcd54;
-                position: absolute;
-                display: inline-block;
-                left: -76%;
-                top: 40%;
-                padding: 20px;
-                text-transform: uppercase;
-            }
-
             #container-flex {
                 background-color: #0b2d3f;
                 width: 90%;
@@ -100,6 +99,7 @@
 
             .container-flex-child {
                 width: 150px;
+                height: 150px;
                 font-size: 8rem;
                 font-weight: bold;
             }
@@ -131,10 +131,19 @@
             <img src="images/flex-axis.png" alt="" />
         </div>
         <section id="container-flex">
+            <div class="container-flex-child" style="background-color: #56d6b2"></div>
+            <div class="container-flex-child" style="background-color: #4dcccc"></div>
+            <div class="container-flex-child" style="background-color: #1cb8e7"></div>
+            <div class="container-flex-child" style="background-color: #3e8ae7"></div>
+        </section>
+        <section style="margin-top: 20px" id="container-flex">
             <div class="container-flex-child" style="background-color: #56d6b2">1</div>
             <div class="container-flex-child" style="background-color: #4dcccc">2</div>
             <div class="container-flex-child" style="background-color: #1cb8e7">3</div>
             <div class="container-flex-child" style="background-color: #3e8ae7">4</div>
+            <div class="container-flex-child" style="background-color: #1cb8e7">5</div>
+            <div class="container-flex-child" style="background-color: #3e8ae7">6</div>
+            <div class="container-flex-child" style="background-color: #3e8ae7">7</div>
         </section>
 
         <section id="cat-section">
