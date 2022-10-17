@@ -1,0 +1,249 @@
+:root {
+    --bg: #242629;
+    --white: #fffffe;
+    --border: #eff0f6;
+    --card__background: #16161a;
+    --grey: #94a1b2;
+    --blue-dark: #0e172c;
+    --purple-ligth: #b69eff;
+    --purple-dark: #7f5af0;
+    --h1: 700 3.125rem / normal Inter;
+    --h2: 700 2rem / normal Inter;
+    --body1-regular: 400 1.125rem/1.75rem Inter;
+    --body1-bold: 700 1.125rem / normal Inter;
+}
+
+/**
+ * GLOBAL STYLES
+ */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+p {
+    font-weight: 300;
+    color: #040404a6;
+}
+
+h4 {
+    line-height: 30px;
+}
+
+/**
+ * Airbnb Navbar
+ */
+
+.navbar-list {
+    min-height: 5rem;
+    /* Nav is the parent for each navbar-item. Therefore, we apply
+  display: flex to span all the children elements horizontally */
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 0px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    padding: 0 1.875rem;
+}
+
+.navbar-list__item {
+    /* Notice here that flex-grow has to be specified
+    in each child inside the flex container to grow equally among the allowed
+    space */
+    /* Flex grow works here nicely since the width of the flex-items is
+    the same as the content of the flex-items */
+    flex-grow: 1;
+    list-style-type: none;
+    display: flex;
+    /* by default align-items is set to "stretch"
+    therefore we need to align-items: center to
+    provide original size to the image and center it
+    within the parent container
+    */
+    align-items: center;
+}
+
+.navbar-list__item--center {
+    justify-content: center;
+}
+
+.navbar-list__item--end {
+    justify-content: end;
+}
+.search-label {
+    border: 1px solid rgba(201, 201, 201, 0.527);
+    border-radius: 1.25rem;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 1px 0px;
+    cursor: pointer;
+    max-width: 18.75rem;
+}
+
+.navbar-options:hover {
+    box-shadow: rgba(0, 0, 0, 0.137) 0px 2px 2px;
+}
+
+.btn {
+    padding: 8px 0 8px 16px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.any {
+    padding: 4px 0px;
+    padding-right: 10px;
+    border-right: 1px solid rgba(177, 177, 177, 0.527);
+}
+
+.search-icon-img {
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #ff3a5e;
+}
+.btn-padding {
+    padding-right: 6px;
+}
+
+.btn-text {
+    padding-right: 6px;
+}
+
+.search-icon-img > img {
+    margin-top: 22%;
+}
+
+.navbar-user {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.navbar-user-item {
+    padding: 12px 12px;
+}
+
+.navbar-user-profile-burguer-menu {
+    padding: 0 7px;
+}
+
+.globe-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.navbar-user-profile-container {
+    padding: 5px 5px 5px 12px;
+    width: 80px;
+}
+
+.navbar-user-profile-button {
+    background-color: transparent;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 0px;
+    border: 1px solid rgba(201, 201, 201, 0.527);
+    padding: 5px;
+    cursor: pointer;
+}
+
+.navbar-user-profile-button:hover {
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
+
+.activities-container {
+    display: flex;
+    height: 60px;
+    margin-bottom: 20px;
+    max-width: 1266px;
+    margin: auto;
+    padding: 0 20px;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.activities-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 300;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    line-height: 30px;
+    opacity: 0.5;
+}
+
+.activities-item:hover {
+    opacity: 1;
+}
+
+.activities-item:hover {
+    border-bottom: 2px solid black;
+}
+
+.activities-item-button-container:hover {
+    border-bottom: none;
+}
+
+.activities-item-filter-button {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 5px;
+    border: 2px solid rgba(201, 201, 201, 0.527);
+    padding: 10px 14px;
+    cursor: pointer;
+}
+
+.activities-item-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.activities-item-filter-icon {
+    padding: 4px 10px 4px 0px;
+}
+
+.listings-container {
+    display: flex;
+    max-width: 1266px;
+    margin: auto;
+    padding: 0 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.listing-item {
+    margin-bottom: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+}
+
+.listing-image {
+    border-radius: 20px;
+    width: 280px;
+    height: 250px;
+}
+
+.listing-price {
+    font-weight: 500;
+    color: #000;
+    line-height: 30px;
+}
+
+.listing-price-night {
+    color: #040404;
+}
