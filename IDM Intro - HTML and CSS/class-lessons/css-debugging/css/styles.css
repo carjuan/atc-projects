@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+}
+
+p {
+    backround-color: aqua;
+}
+
+.flex-child {
+    width: 50%;
+    justify-self: center;
+}
+
+.btn {
+    padding: 1rem 1.625rem;
+    background-color: transparent;
+    border: 2px solid blue;
+    border-radius: 10px;
+}
+
+.btn-1 {
+    background-color: aqua;
+    witdh: 300px;
+}
+
+.danger-button:hover {
+    background-color: sandybrown;
+    boder: 2px dashed black;
+}
+
+.danger-button:active {
+    transform: scale(0.9);
+}
