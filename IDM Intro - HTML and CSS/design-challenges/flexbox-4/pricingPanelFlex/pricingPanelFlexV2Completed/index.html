@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Sección de precios</title>
+</head>
+
+<body>
+    <!-- TODO: make another file where you can demonstrate the difference without REMS in class lesson, something like
+        REM lessons -->
+    <!-- Instead of naming things as pricing-description or pricing cards, I use general names
+    so those "COMPONENTS" can be resued for other types of cards or headings -->
+    <main class="wrapper">
+        <section>
+            <header class="description">
+                <span class="description__tag">PRICES</span>
+                <hgroup>
+                    <h1 class="description__heading">
+                        Unlock your creativity. <br>
+                        Try our pro plan, <span class="description__heading-free">for free!</span>
+                    </h1>
+                    <p class="description__summary">
+                        Having access to all the content for free hasn't been easier. Just select your plan below
+                        and start your free trial for 7 days.
+                    </p>
+                </hgroup>
+            </header>
+
+            <div class="switch">
+                <span class="switch__option switch__option--left">Monthly</span>
+                <div class="switch__toggle-outer">
+                    <div class="switch__toggle-inner"></div>
+                </div>
+                <span class="switch__option switch__option--right">Anually(-40%)</span>
+            </div>
+            <div class="cards">
+                <article class="cards__option cards__option--basic">
+                    <header>
+                        <hgroup>
+                            <h2 class="card__heading">Basic</h2>
+                            <p class="card__label">Individual plan</p>
+                            <p class="card__summary">
+                                Lorem ipsum dolor sit amet doloroli sitiol conse cteur adipiscing elit
+                            </p>
+                            <h2 class="card__price">
+                                $50<span class="card__price-currency">usd</span><span
+                                    class="card__price-type">/mensual</span>
+                            </h2>
+                            <h3 class="card__subheading">What is included?</h3>
+                        </hgroup>
+                    </header>
+                    <ul class="card__list">
+                        <li class="card__list-item card__list-item--disable">
+                            <span class="card__list-item-checkmark">
+                                <img class="card__list-item-icon" src="./icons/check.svg" alt="checkmark icon">
+                            </span>
+                            <p class="card__list-item-benefit">Lifetime access to all the courses</p>
+                        </li>
+                        <li class="card__list-item card__list-item--disable">
+                            <span class="card__list-item-checkmark">
+                                <img class="card__list-item-icon" src="./icons/check.svg" alt="">
+                            </span>
+                            <p class="card__list-item-benefit">Access anytime to any course</p>
+                        </li>
+                        <li class="card__list-item">
+                            <span class="card__list-item-checkmark">
+                                <img class="card__list-item-icon" src="./icons/check.svg" alt="">
+                            </span>
+                            <p class="card__list-item-benefit">Access to all the projects</p>
+                        </li>
+                        <li class="card__list-item">
+                            <span class="card__list-item-checkmark">
+                                <img class="card__list-item-icon" src="./icons/check.svg" alt="">
+                            </span>
+                            <p class="card__list-item-benefit">Acces to our discord</p>
+                        </li>
+                    </ul>
+                    <button class="card__button">Start</button>
+                </article>
+                <article class="cards__option cards__option--pro">
+                    <header>
+                        <hgroup>
+                            <h2 class="card__heading card__heading--dark">Pro</h2>
+                            <p class="card__label card__label--dark">Individual plan</p>
+                            <p class="card__summary card__summary--dark">
+                                Lorem ipsum dolor sit amet doloroli sitiol conse cteur adipiscing elit
+                            </p>
+                            <h2 class="card__price card__price--dark">
+                                $75<span class="card__price-currency card__price-currency--dark">usd</span><span
+                                    class="card__price-type card__price-type--dark">/mensual</span>
+                            </h2>
+                            <h3 class="card__subheading card__subheading--dark">What is included?</h3>
+                        </hgroup>
+                    </header>
+                    <ul class="card__list">
+                        <li class="card__list-item card__list-item--dark card__list-item--disable">
+                            <span class="card__list-item-checkmark card__list-item-checkmark--dark">
+                                <img class="card__list-item-icon" src="./icons/check.svg" alt="">
+                            </span>
+                            <p class="card__list-item-benefit">Lifetime access to all the courses</p>
+                        </li>
+                        <li class="card__list-item card__list-item--dark">
+                            <span class="card__list-item-checkmark card__list-item-checkmark--dark">
+                                <img class="card__list-item-icon" src="./icons/check.svg" alt="">
+                            </span>
+                            <p class="card__list-item-benefit">Access anytime to any course</p>
+                        </li>
+                        <li class="card__list-item card__list-item--dark">
+                            <span class="card__list-item-checkmark card__list-item-checkmark--dark">
+                                <img class="card__list-item-icon" src="./icons/check.svg" alt="">
+                            </span>
+                            <p class="card__list-item-benefit">Access to all the projects</p>
+                        </li>
+                        <li class="card__list-item card__list-item--dark">
+                            <span class="card__list-item-checkmark card__list-item-checkmark--dark">
+                                <img class="card__list-item-icon" src="./icons/check.svg" alt="">
+                            </span>
+                            <p class="card__list-item-benefit">Access to our Discord</p>
+                        </li>
+                    </ul>
+                    <button class="card__button card__button--dark">Start</button>
+                </article>
+                <article class="cards__option cards__option--enterprise">
+                    <header>
+                        <hgroup>
+                            <h2 class="card__heading">Enterprise</h2>
+                            <p class="card__label">5 members plan</p>
+                            <p class="card__summary">
+                                Lorem ipsum dolor sit amet doloroli sitiol conse cteur adipiscing elit
+                            </p>
+                            <h2 class="card__price">
+                                $99<span class="card__price-currency">usd</span><span
+                                    class="card__price-type">/mensual</span>
+                            </h2>
+                            <h3 class="card__subheading">What is included?</h3>
+                        </hgroup>
+                    </header>
+                    <ul class="card__list">
+                        <li class="card__list-item">
+                            <span class="card__list-item-checkmark">
+                                <img class="card__list-item-icon" src="./icons/check.svg" alt="">
+                            </span>
+                            <p class="card__list-item-benefit">Lifetime access to all the courses</p>
+                        </li>
+                        <li class="card__list-item">
+                            <span class="card__list-item-checkmark">
+                                <img class="card__list-item-icon" src="./icons/check.svg" alt="">
+                            </span>
+                            <p class="card__list-item-benefit">Access anytime to any course</p>
+                        </li>
+                        <li class="card__list-item">
+                            <span class="card__list-item-checkmark">
+                                <img class="card__list-item-icon" src="./icons/check.svg" alt="">
+                            </span>
+                            <p class="card__list-item-benefit">Access to all the projects</p>
+                        </li>
+                        <li class="card__list-item">
+                            <span class="card__list-item-checkmark">
+                                <img class="card__list-item-icon" src="./icons/check.svg" alt="">
+                            </span>
+                            <p class="card__list-item-benefit">Access our Discord</p>
+                        </li>
+                    </ul>
+                    <button class="card__button">Start</button>
+                </article>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
