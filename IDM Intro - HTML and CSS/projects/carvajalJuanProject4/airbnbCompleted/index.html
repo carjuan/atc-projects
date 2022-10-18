@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Airbnb</title>
+    <!-- 
+    We are now separating the style from HTML
+    Remember: HTML provides structure
+    CSS: provides style
+    That is one of the reason it is better to separate these two documents 
+    -->
+    <!-- we use the link element to grab external resources like fonts and STYLESHEETS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;500;700&family=Poppins:wght@400;600&family=Roboto:wght@300;500&display=swap"
+        rel="stylesheet">
+    <!-- We add a link with type="icon" to add our favicon or icon that goes in the tab of the browser and before the <title></title> of our website -->
+    <link rel="icon" type="image/x-icon" href="assets/logo/favicon.ico">
+</head>
+
+<body>
+    <!-- 
+    NOTE: notice that we are now using SEMANTIC HTML elements!
+    it means that we are giving meaning to the content of the page. Instead of using divs, which are generic
+    and do not have any meaning to the browser, we use:
+        - <head> to indicate the head of the page
+        - <nav> to indicate the navigational bar of the page - where people can click and go to other pages
+        - <main> represents the dominann contant of the HTML document 
+    
+    NOTE: keep in mind that these elements also help with organization AND accessability. People who depend on screen
+    readers will benefit from you writing SEMANTIC html, which means using elements that provide MEANING
+    to the HTML docuemnt.
+    -->
+
+    <!-- Header starts -->
+    <header>
+        <!-- We talk about SEMANTIC HTML elements, we indicate to the browser that the
+      next section is a NAVBAR or HTML nav -->
+        <nav>
+            <ul class="navbar-list">
+                <!-- Any block element or inline element can be FLEXED item. -->
+                <!-- Remember the parent element (ul) has to have display:flex for the children to span horizontally -->
+                <li class="navbar-list__item">
+                    <img src="assets/logo/airbnb-logo.png" alt="airbnb logo">
+                </li>
+
+                <li class="navbar-list__item navbar-list__item--center">
+                    <div class="search-label-list">
+                        <!-- 
+                        button is better as this indicates to the browser that we are dealing with a button and not some generic element, like div 
+                    --><button class="search-label-list__button">Anywhere</button><button
+                            class="search-label-list__button">Any week</button><button
+                            class="search-label-list__button search-label-list__button--no-border">Add guests
+                            <span class="search-label-list__search-icon">
+                                <img class="search-label-list__icon" src="assets/icons/search-icon.svg"
+                                    alt="search icon">
+                            </span>
+                        </button>
+                    </div>
+                </li>
+
+                <li class="navbar-list__item navbar-list__item--end">
+                    <div class="navbar-list__item-user">
+                        <span class="navbar-list__item-user-text">Become Host</span>
+                        <img src="assets/icons/globe.png" alt="globe icon">
+                        <div class="navbar-list__item-user-profile">
+                            <button class="navbar-list__item-user-button">
+                                <img class="navbar-list__item-user-menu" src="assets/icons/burguer-menu.png"
+                                    alt="burguer menu icon">
+                                <img src="assets/icons/profile-icon.png" alt="notification profile icon">
+                            </button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <!-- Header is closed -->
+    </header>
+
+    <main>
+        <!-- This sections is the one bellow the navigational bar and indicates the activties we can choose from -->
+        <div>
+            <!-- We have one box containing all the activties and the one we apply flex to for the children items -->
+            <ul class="activities">
+                    <li>
+                        <button class="activities__item">
+                            <img class="activities__item-icon" src="assets/icons/cabins.jpg" alt="cabins">
+                            <span class="activities__item-text">Cabins</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="activities__item">
+                            <img class="activities__item-icon" src="assets/icons/OMG!.jpg" alt="OMG icon">
+                            <span class="activities__item-text">OMG!</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="activities__item">
+                            <img class="activities__item-icon" src="assets/icons/artic.png" alt="artic icon">
+                            <span class="activities__item-text">Artic</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="activities__item activities__item--large">
+                            <img class="activities__item-icon" src="assets/icons/national-park.png" alt="national park icon">
+                            <span class="activities__item-text">National parks</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="activities__item">
+                            <img class="activities__item-icon" src="assets/icons/castle.png" alt="castle icon">
+                            <span class="activities__item-text">Castles</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="activities__item">
+                            <img class="activities__item-icon" src="assets/icons/lakefront.jpg" alt=" lakefront icon">
+                            <span class="activities__item-text">Lakefront</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="activities__item">
+                            <img class="activities__item-icon" src="assets/icons/campers.png" alt="campers icon">
+                            <span class="activities__item-text">Campers</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="activities__item activities__item--large">
+                            <img class="activities__item-icon" src="assets/icons/tinyhomes.png" alt="tiny homes icon">
+                            <span class="activities__item-text">Tiny homes</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="activities__item">
+                            <img class="activities__item-icon" src="assets/icons/islands.png" alt="islands icon">
+                            <span class="activities__item-text">Islands</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="activities__item">
+                            <img class="activities__item-icon" src="assets/icons/amazing-pools.png" alt="pools icon">
+                            <span class="activities__item-text">Amazing pools</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="activities__item">
+                            <img class="activities__item-icon" src="assets/icons/design.png" alt="design icon">
+                            <span class="activities__item-text">Design</span>
+                        </button>
+                    </li>
+                    <li class="activities__item activities__item--end">
+                        <button class="activities__item-filter-button">
+                            <img class="activities__item-filter-icon" src="assets/icons/filter-icon.png" alt="filter icon">
+                            <span>Filters</span>
+                        </button>
+                    </li>
+            </ul>
+        </div>
+        <!-- This following section is the house listing -->
+        <!-- We have one box containing all the listings and the one we apply flex to -->
+        <div>
+            <div class="listings">
+                <!-- We have 8 "listing item" which is each section with its picture, name, distance, dates,and price -->
+                <article>
+                    <a target="_blank" class="listings__item"
+                        href="https://www.airbnb.ca/rooms/19181481?adults=1&category_tag=Tag%3A8102&children=0&infants=0&search_mode=flex_destinations_search&check_in=2022-10-17&check_out=2022-10-22&federated_search_id=6ddcd7af-e128-4fe3-bcc4-f2541bb6b6a1&source_impression_id=p3_1665070704_7YIqs6N137GIEL0x">
+                        <header>
+                            <img class="listings__image" src="assets/images/house.webp" alt="house image">
+                            <h2>Fairbanks, Alaska, US</h2>
+                            <p>3,343 km away</p>
+                            <p>Sep. 21 - 28</p>
+                        </header>
+                        <p>
+                            <span class="listings__price">$481 CAD</span>
+                            <span class="listings__price-night">night</span>
+                        </p>
+                    </a>
+                </article>
+                <article>
+                    <a target="_blank"
+                        href="https://www.airbnb.ca/rooms/19181481?adults=1&category_tag=Tag%3A8102&children=0&infants=0&search_mode=flex_destinations_search&check_in=2022-10-17&check_out=2022-10-22&federated_search_id=6ddcd7af-e128-4fe3-bcc4-f2541bb6b6a1&source_impression_id=p3_1665070704_7YIqs6N137GIEL0x"
+                        class="listings__item">
+                        <header>
+                            <img class="listings__image" src="assets/images/yellow-knife.webp"
+                                alt="house listing image">
+                            <h2>Yellowknife, Canada</h2>
+                            <p>1,753 km away</p>
+                            <p>Oct. 5 - 10</p>
+                        </header>
+                        <p>
+                            <span class="listings__price">$256 CAD</span>
+                            <span class="listings__price-night">night</span>
+                        </p>
+                    </a>
+                </article>
+                <article>
+                    <a target="_blank"
+                        href="https://www.airbnb.ca/rooms/19181481?adults=1&category_tag=Tag%3A8102&children=0&infants=0&search_mode=flex_destinations_search&check_in=2022-10-17&check_out=2022-10-22&federated_search_id=6ddcd7af-e128-4fe3-bcc4-f2541bb6b6a1&source_impression_id=p3_1665070704_7YIqs6N137GIEL0x"
+                        class="listings__item">
+                        <header>
+                            <img class="listings__image" src="assets/images/vesturbyggo.webp" alt="house listing image">
+                            <h2>Vesturbyggo, Iceland</h2>
+                            <p>4,368 km away</p>
+                            <p>May. 15 - 22</p>
+                        </header>
+                        <p>
+                            <span class="listings__price">$203 CAD</span>
+                            <span class="listings__price-night">night</span>
+                        </p>
+                    </a>
+                </article>
+                <article>
+                    <a target="_blank"
+                        href="https://www.airbnb.ca/rooms/19181481?adults=1&category_tag=Tag%3A8102&children=0&infants=0&search_mode=flex_destinations_search&check_in=2022-10-17&check_out=2022-10-22&federated_search_id=6ddcd7af-e128-4fe3-bcc4-f2541bb6b6a1&source_impression_id=p3_1665070704_7YIqs6N137GIEL0x"
+                        class="listings__item">
+                        <header>
+                            <img class="listings__image" src="assets/images/reykhola.webp" alt="house listing image">
+                            <h2>Reykholahreppur, Iceland</h2>
+                            <p>4,656 km away</p>
+                            <p>Oct. 15 - 20</p>
+                        </header>
+                        <p>
+                            <span class="listings__price">$153 CAD</span>
+                            <span class="listings__price-night">night</span>
+                        </p>
+                    </a>
+                </article>
+                <article>
+                    <a target="_blank"
+                        href="https://www.airbnb.ca/rooms/19181481?adults=1&category_tag=Tag%3A8102&children=0&infants=0&search_mode=flex_destinations_search&check_in=2022-10-17&check_out=2022-10-22&federated_search_id=6ddcd7af-e128-4fe3-bcc4-f2541bb6b6a1&source_impression_id=p3_1665070704_7YIqs6N137GIEL0x"
+                        class="listings__item">
+                        <header>
+                            <img class="listings__image" src="assets/images/cabin.webp" alt="house listing image">
+                            <h2>Fairbanks, Alaska, US</h2>
+                            <p>3,656 km away</p>
+                            <p>Nov. 15 - 20</p>
+                        </header>
+                        <p>
+                            <span class="listings__price">$180 CAD</span>
+                            <span class="listings__price-night">night</span>
+                        </p>
+                    </a>
+                </article>
+                <article>
+                    <a target="_blank"
+                        href="https://www.airbnb.ca/rooms/19181481?adults=1&category_tag=Tag%3A8102&children=0&infants=0&search_mode=flex_destinations_search&check_in=2022-10-17&check_out=2022-10-22&federated_search_id=6ddcd7af-e128-4fe3-bcc4-f2541bb6b6a1&source_impression_id=p3_1665070704_7YIqs6N137GIEL0x"
+                        class="listings__item">
+                        <header>
+                            <img class="listings__image" src="assets/images/faribank.webp" alt="house listing image">
+                            <h2>Fairbanks, Alaska, US</h2>
+                            <p>3,966 km away</p>
+                            <p>Oct. 6 - 12</p>
+                        </header>
+                        <p>
+                            <span class="listings__price">$826 CAD</span>
+                            <span class="listings__price-night">night</span>
+                        </p>
+                    </a>
+                </article>
+                <article>
+                    <a target="_blank"
+                        href="https://www.airbnb.ca/rooms/19181481?adults=1&category_tag=Tag%3A8102&children=0&infants=0&search_mode=flex_destinations_search&check_in=2022-10-17&check_out=2022-10-22&federated_search_id=6ddcd7af-e128-4fe3-bcc4-f2541bb6b6a1&source_impression_id=p3_1665070704_7YIqs6N137GIEL0x"
+                        class="listings__item">
+                        <header>
+                            <img class="listings__image" src="assets/images/heredia.webp" alt="house listing image">
+                            <h2>Heredia, Costa Rica</h2>
+                            <p>4,556 km away</p>
+                            <p>Oct. 7 - 13</p>
+                        </header>
+                        <p>
+                            <span class="listings__price">$456 CAD</span>
+                            <span class="listings__price-night">night</span>
+                        </p>
+                    </a>
+                </article>
+                <article>
+                    <a target="_blank"
+                        href="https://www.airbnb.ca/rooms/19181481?adults=1&category_tag=Tag%3A8102&children=0&infants=0&search_mode=flex_destinations_search&check_in=2022-10-17&check_out=2022-10-22&federated_search_id=6ddcd7af-e128-4fe3-bcc4-f2541bb6b6a1&source_impression_id=p3_1665070704_7YIqs6N137GIEL0x"
+                        class="listings__item">
+                        <header>
+                            <img class="listings__image" src="assets/images/stege.webp" alt="house listing image">
+                            <h2>Stege, Denmark</h2>
+                            <p>3,656 km away</p>
+                            <p>Nov. 15 - 20</p>
+                        </header>
+                        <p>
+                            <span class="listings__price">$900 CAD</span>
+                            <span class="listings__price-night">night</span>
+                        </p>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

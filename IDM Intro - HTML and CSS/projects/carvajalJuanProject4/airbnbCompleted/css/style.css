@@ -1,0 +1,258 @@
+:root {
+    --body1-regular: 300 1.125rem/1.35rem Roboto;
+    --body1-bold: 500 1.125rem/1.875 Roboto;
+    --red: #ff3a5e;
+    --black: #000;
+    --regular-box-shadow: #00000014 0px 2px 0px;
+    --hover-box-shadow: #00000023 0px 4px 2px;
+    --grey-border: #c9c9c986;
+    --mid-button-bar-grey: #b1b1b186;
+    --hover-bottom-border: #1b1b1b;
+}
+
+/**
+ * GLOBAL STYLES
+ */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: var(--body1-regular);
+}
+
+p {
+    font-weight: 300;
+    color: #040404a6;
+}
+
+h2 {
+    line-height: 2.2rem;
+    font-size: 1rem;
+}
+
+li {
+    list-style-type: none;
+}
+
+/**
+ * Airbnb Navbar
+ */
+
+.navbar-list {
+    min-height: 5rem;
+    /* Nav is the parent for each navbar-item. Therefore, we apply
+  display: flex to span all the children elements horizontally */
+    display: flex;
+    box-shadow: var(--regular-box-shadow);
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    padding: 0 1.875rem;
+}
+
+.navbar-list__item {
+    /* Notice here that flex-grow has to be specified
+    in each child inside the flex container to grow equally among the allowed
+    space */
+    /* Flex grow works here nicely since the width of the flex-items is
+    the same as the content of the flex-items */
+    flex-grow: 1;
+    list-style-type: none;
+    display: flex;
+    /* by default align-items is set to "stretch"
+    therefore we need to align-items: center to
+    provide original size to the image and center it
+    within the parent container
+    */
+    align-items: center;
+}
+
+.navbar-list__item--center {
+    justify-content: center;
+}
+
+.navbar-list__item--end {
+    justify-content: end;
+}
+
+.search-label-list {
+    border: 2px solid var(--grey-border);
+    border-radius: 1.2rem;
+    box-shadow: var(--regular-box-shadow);
+    cursor: pointer;
+    padding: 0.2rem;
+    padding-left: 0.8rem;
+}
+
+.search-label-list:hover {
+    box-shadow: var(--hover-box-shadow);
+}
+
+.search-label-list__button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 0.9rem;
+    padding: 0.1rem 0.6rem;
+    border-right: 1px solid var(--mid-button-bar-grey);
+}
+
+.search-label-list__button--no-border {
+    border: none;
+}
+
+.search-label-list__search-icon {
+    min-width: 1.6rem;
+    min-height: 1.6rem;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: var(--red);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-label-list__icon {
+    width: 0.875rem;
+    height: 0.875rem;
+}
+
+.navbar-list__item-user {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.navbar-list__item-user-text {
+    padding: 0.75rem;
+}
+
+.navbar-list__item-user-profile {
+    margin-left: 1.1rem;
+}
+
+.navbar-list__item-user-button {
+    background-color: transparent;
+    border-radius: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--regular-box-shadow);
+    border: 2px solid var(--grey-border);
+    padding: 0.3125rem;
+    cursor: pointer;
+}
+
+.navbar-list__item-user-menu {
+    padding: 0 0.4375rem;
+}
+
+.navbar-list__item-user-button:hover {
+    box-shadow: var(--hover-box-shadow);
+}
+
+.activities {
+    display: flex;
+    min-height: 5rem;
+    max-width: 60rem;
+    margin: auto;
+    margin-bottom: 1.25rem;
+    padding: 0 1.25rem;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    /* You can use gap in flexbox items */
+    gap: 1.25rem;
+}
+
+.activities__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 300;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    opacity: 0.5;
+    min-height: 90%;
+    /* Key property to tell the parent element to not wrap text inside of it */
+    white-space: nowrap;
+}
+
+.activities__item:hover {
+    opacity: 1;
+}
+
+.activities__item-text:hover {
+    border-bottom: 2px solid var(--hover-bottom-border);
+    /* With margin negative, we can remove the increasing and decreasing box when hovering and adding a new
+    border */
+    margin-bottom: -2px;
+}
+
+.activities__item-text {
+    padding: 10px 0;
+}
+
+.activities__item-icon {
+    width: 24px;
+    height: 24px;
+}
+.activities__item--end {
+    opacity: 1;
+    margin-right: 0;
+}
+
+.activities__item-filter-button {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    border: 2px solid var(--grey-border);
+    padding: 10px 14px;
+    cursor: pointer;
+}
+
+.activities__item-filter-icon {
+    padding: 4px 10px 4px 0px;
+}
+
+/* 
+**
+*** HOUSE LISTING STYLE 
+**
+*/
+
+.listings {
+    display: flex;
+    max-width: 1266px;
+    margin: auto;
+    padding: 0 1.25rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.listings__item {
+    margin-bottom: 1.25rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.listings__image {
+    border-radius: 20px;
+    width: 17.5rem;
+    height: 15.625rem;
+}
+
+.listings__price {
+    font: var(--body1-bold);
+    color: var(--black);
+}
+
+.listings__price-night {
+    color: var(--black);
+}
