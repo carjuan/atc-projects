@@ -11,9 +11,7 @@
 - Colors match design
 - Listings container is centered
 - Airbnb navbar occupies all horizontal space of the page
-- All hover effects are present: images, activities, user profile and mid navbar options
-- Mobile version is provided
-- Increasing the font of the browser, the design scales accordingly","
+- All hover effects are present: images, activities, user profile and mid navbar options","
 ",,"
 
 ",,"
@@ -24,7 +22,6 @@
 "CSS
 
 - Appropriate CSS selectors are used
-- CSS variables are used
 - CSS has proper indentation
 - classes are used to select HTML elements
 - Proper CSS syntax is maintained: selector, curly braces, property, colon, value, semicolon
@@ -34,8 +31,6 @@
 - Utilizes box-shadow for hover effects
 - There are hover effects on all elements
 - CSS is organized in its own folder
-- REM units are used
-- Uses BEM naming convention
 ","
 ",,"
 ",,"
@@ -49,7 +44,7 @@
 - Proper semantic HTML is used forg grouping and nesting
 - HTML document has proper indentation, demonstrating correct HTML hierarchy
 - Spelling, grammar, punctuation, etc. 
-- Naming classes (BEM) has proper meaning to the content being displayed on the page
+- Naming classes has proper meaning to the content being displayed on the page
 - Uses relative paths","
 ",,"
 ",,"
@@ -62,8 +57,7 @@
 - Submitted on time
 - Submitted correctly
 - Files are named correctly
-- Folders are named correctly
-- Project is organized","
+- Folders are named correctly","
 ",,"
 ",,"
 ",,"
