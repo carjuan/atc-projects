@@ -1,0 +1,259 @@
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilroy/Gilroy-Extrabold.otf");
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilroy/Gilroy-Bold.otf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilroy/Gilroy-Semibold.otf");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilroy/Gilroy-Medium.otf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilroy/Gilroy-Regular.otf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilroy/Gilroy-Light.otf");
+    font-weight: 200;
+}
+
+:root {
+    /* 
+    **
+    *** TYPOGRAPHY 
+    **
+    */
+    --body-medium: 500 1rem/1.5rem "Gilroy";
+    --body-medium-bold: 700 1rem/1.5rem "Gilroy";
+    --body-regular-light: 200 1rem/1.5rem "Gilroy";
+    --body-letter-spacing: 0.3px;
+
+    /*    font-weight font-size/line-height font-family  */
+    --h1-extra-bold: 800 3.75rem/4.25rem "Gilroy";
+
+    /*      font-weight font-size font-family */
+    --h2-bold: 700 2.85rem "Gilroy";
+    --h3-bold: 700 1.5rem/2.5rem "Gilroy";
+
+    /* 
+    **
+    *** Colors
+    **
+    */
+    --body-regular-color: #242b33;
+    --primary-dark-blue: #003459;
+    --neutral-color: #99a2a5;
+    --white: #fff;
+}
+
+/* BASE STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--body-regular-color);
+    letter-spacing: var(--body-letter-spacing);
+    min-width: 18rem;
+    background-color: #fceed5;
+    font: var(--body-medium);
+}
+
+/* By default, these elements do not inherit font properties from body */
+input,
+button,
+textarea {
+    font: inherit;
+}
+
+/* For all buttons, we want to always set the background transparent 
+and no border*/
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+/* 99% of the time, we do not want the bullet points that come by default with <li> elements */
+li {
+    list-style-type: none;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin-inline: auto;
+    padding-inline: 2rem;
+    padding-block: 3.75rem;
+}
+
+.wrapper--no-padding {
+    padding-block: 0;
+}
+
+/* NAVBAR SECTION */
+
+.navbar {
+    display: flex;
+    min-height: 6.25rem;
+    align-items: center;
+}
+
+.navbar__list {
+    display: flex;
+    font: var(--body-medium-bold);
+    color: var(--primary-dark-blue);
+}
+
+.navbar__list-logo {
+    min-width: 7.18rem;
+    min-height: 2.5rem;
+}
+
+.navbar__list--left {
+    display: flex;
+    gap: 10px;
+    min-width: 42rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar__list--right {
+    min-width: 42rem;
+    justify-content: space-between;
+    margin-left: auto;
+    align-items: center;
+}
+
+.navbar__list-button {
+    padding: 0.9rem 1.9rem;
+    border-radius: 3.5625rem;
+    cursor: pointer;
+    background-color: var(--primary-dark-blue);
+    color: var(--white);
+    font: var(--body-medium-bold);
+}
+
+.navbar__list-search-bar {
+    padding: 0.9rem 2.5rem;
+    border-radius: 3.5625rem;
+    background-color: var(--white);
+    color: var(--body-regular-color);
+    align-items: center;
+    display: flex;
+    color: #99a2a5;
+    gap: 0.75rem;
+}
+
+.navbar__list-search-bar-text {
+    font: var(--body-regular-light);
+    color: var(--neutral-color);
+}
+
+.navbar__list-currency {
+    display: flex;
+    gap: 1rem;
+    font: var(--body-medium);
+}
+/* HERO SECTION */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline-end: 3rem;
+}
+
+.hero__container {
+    outline: 4px solid black;
+}
+
+.hero__container--end {
+    align-self: end;
+    outline: none;
+}
+
+.hero__heading {
+    font: var(--h1-extra-bold);
+    color: var(--primary-dark-blue);
+}
+
+.hero__heading--small {
+    font: var(--h2-bold);
+}
+
+.hero__description {
+    max-width: 30rem;
+    margin: 1.5rem 0;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.buttons--end {
+    margin-left: auto;
+    align-self: end;
+}
+
+.buttons__button {
+    padding: 0.7rem 2rem;
+    border-radius: 3.5625rem;
+    vertical-align: bottom;
+    cursor: pointer;
+}
+
+.buttons__button-icon {
+    vertical-align: bottom;
+}
+
+.buttons__button--border {
+    border: 2px solid var(--primary-dark-blue);
+    color: var(--primary-dark-blue);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.buttons__button--background {
+    background-color: var(--primary-dark-blue);
+    color: var(--white);
+    border: none;
+}
+
+/* PETS SECTION */
+.pets-section {
+    background-color: white;
+    min-height: 700px;
+}
+
+.pets__header-secondary {
+    color: var(--primary-dark-blue);
+    font: var(--h3-bold);
+}
+
+.pets__header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
