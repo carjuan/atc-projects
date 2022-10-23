@@ -1,0 +1,55 @@
+/* Remember to use comments to section your styles. Comments provide a great way to be organized and
+help you to remember what you have done in the past */
+
+:root {
+    /* Your CSS Variables */
+    /* 
+    **
+    *** TYPOGRAPHY (fonts)
+    **
+    */
+
+    /* 
+    **
+    *** Colors
+    **
+    */
+}
+
+/***** BASE STYLES *****/
+/* Base styles mean: general rules for your website to have correct style */
+
+/* 1. 
+    this provides to every element a margin and a padding of zero so that we can control our elements more 
+*/
+* {
+    margin: 0;
+    padding: 0;
+
+    /* This property is used to tell the browser that for any specific widths I provide in my design,
+    any padding or border should also be accounted for the final width.
+    Example. (WITHOUT box-sizing: border-box: --card: width: 400px, padding, 20px, border 2px = width 444px 
+    Example. (WITH box-sizing: border-box: --card: width: 400px, padding, 20px, border 2px = width 400px */
+    box-sizing: border-box;
+}
+
+body {
+    /* Rememeber to set your base styles here:
+        - color
+        - base font 
+        - etc.
+        */
+}
+
+button {
+    /* any style particular styles you can think of that might apply to all buttons later on? */
+}
+
+/* This is a good example for a "base style".
+     99% of the time, we do not want the bullet points that come by default with <li> elements
+*/
+li {
+    list-style-type: none;
+}
+
+/***** NAVBAR *****/
