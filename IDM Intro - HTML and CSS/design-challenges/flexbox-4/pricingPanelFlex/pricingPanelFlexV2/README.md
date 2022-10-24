@@ -10,7 +10,7 @@ You can use any tools you like to help you complete the challenge. So if you've 
 
 ### Mandatory
 
--   From now on, your projects should follow BEM: [BEM class naming convetion](https://getbem.com/naming/) or checkout this [this article](https://css-tricks.com/bem-101/)
+-   From now on, your projects should follow BEM: [BEM class naming convention](https://getbem.com/naming/) or checkout this [this article](https://css-tricks.com/bem-101/)
 
 -   Use CSS variables: [CSS variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
 -   You must orginize your CSS (using external stylesheets)
@@ -20,6 +20,7 @@ You can use any tools you like to help you complete the challenge. So if you've 
 -   You must start, whenever possible, using [REM units](https://www.w3schools.com/cssref/css_units.asp) units for specifying, widths, heights, fonts, etc. This improves the accessibility of your website. Check more about [Accessible responsive design](https://web.dev/accessible-responsive-design/)
 
 -   Your document has to be semantic, check [semantic HTML](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#semantics_in_html) (divs are ok just for styling purposes)
+
     -   main
     -   article
     -   section
@@ -31,8 +32,6 @@ You can use any tools you like to help you complete the challenge. So if you've 
     -   button
 
 -   Check the `style-guide.md` for extra information on colors, font, extra CSS you might need, etc.
-
-You can use any other tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go. Remember, you can always go and check previous design challenges in the course and use the CSS learned for this and future challenges.
 
 ## Where to find everything
 
