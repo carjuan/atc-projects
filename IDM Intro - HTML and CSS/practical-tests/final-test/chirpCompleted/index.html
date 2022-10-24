@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chirp Langing Page</title>
+    <style>
+        .avatars {
+            outline: 4px solid black;
+            display: flex;
+            justify-content: center;
+        }
+
+        .avatars__avatar {
+            /* Using margin negative we can achieve this bahaviour! */
+            margin-left: -1.5rem;
+        }
+
+        .avatars__avatar--first {
+            margin: 0;
+        }
+
+        .analytics {
+            font-size: 40px;
+            outline: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="avatars">
+        <div class="avatars__avatar avatars__avatar--first"><img src="Assets/userAvatar01.svg" alt=""></div>
+        <div class="avatars__avatar"><img src="Assets/userAvatar02.svg" alt=""></div>
+        <div class="avatars__avatar"><img src="Assets/userAvatar03.svg" alt=""></div>
+        <div class="avatars__avatar"><img src="Assets/userAvatar04.svg" alt=""></div>
+        <div class="avatars__avatar"><img src="Assets/userAvatar05.svg" alt=""></div>
+        <div class="avatars__avatar"><img src="Assets/userAvatar06.svg" alt=""></div>
+        <div class="avatars__avatar"><img src="Assets/userAvatar07.svg" alt=""></div>
+        <div class="avatars__avatar"><img src="Assets/userAvatar08.svg" alt=""></div>
+        <div class="avatars__avatar"><img src="Assets/userAvatar09.svg" alt=""></div>
+    </div>
+    <!-- Changing the size of the emoji is just as easy as chaging the font-size of the parent element. Emoji will inherit the font-size of parent as seen
+    in previous chapters -->
+    <div class="analytics">
+        📈
+    </div>
+    <h1>What are customer are saying</h1>
+    <p>This is the best product ever!</p>
+</body>
+
+</html>

@@ -114,7 +114,7 @@
 		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-1578.0894" y1="7947.8594" x2="-751.6942" y2="7655.3955" gradientTransform="matrix(1 0 0 -1 0 8472)">
 		<stop  offset="0" style="stop-color:#97F7F5"/>
 		<stop  offset="1" style="stop-color:#FBF7B8"/>
-	</linearGradient>
+		</linearGradient>
 	<path class="st9" d="M-1271.6,527.8c11.7-25.3,41.7-36.4,67-24.7c25.3,11.7,36.4,41.7,24.7,67l-79.2,171.6
 		c-11.7,25.3-41.7,36.4-67,24.7c-25.3-11.7-36.4-41.7-24.7-67L-1271.6,527.8z"/>
 	
