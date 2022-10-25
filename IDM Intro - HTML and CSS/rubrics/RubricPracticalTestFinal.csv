@@ -1,0 +1,65 @@
+"For the best editing experience, upload this .csv as a rubric in Microsoft Teams."
+
+"Practical Test Final","100"
+"Rubric for the final practical test for the IDM Intro - HTML and CSS course"
+""
+,"Exceptional","10","Meets Most Requirements","7","Meets Some Requirements","5","Developing/Needs Improvement","3","Failed to Achieve Outcome","1"
+"Visual Layout
+
+- Page looks like the design provided or created
+- Margins, spacing and padding are similar 
+- Font is displayed properly
+- Colors match design
+- Content is centered with a max-width of 1440p","
+",,"
+
+",,"
+",,"
+",,"
+",
+"30"
+"CSS
+
+- Appropriate CSS selectors are used
+- BEM class system used properly
+- CSS has proper indentation
+- classes are used to select HTML elements
+- Proper CSS syntax is maintained: selector, curly braces, property, colon, value, semicolon
+- Font types are similar to design
+- Font sizes/weight and alignment are similar to design
+- CSS is organized hierarchically using BEM
+- CSS is organized in its own folder
+","
+",,"
+",,"
+",,"
+",,"
+",
+"25"
+"HTML
+
+- HTML5 block elements & divs are used
+- Proper semantic HTML is used for grouping and nesting
+- HTML document has proper indentation, demonstrating correct HTML hierarchy
+- Spelling, grammar, punctuation, etc. 
+- Naming classes has proper meaning to the content being displayed on the page
+- Uses relative paths","
+",,"
+",,"
+",,"
+",,"
+",
+"25"
+"Edge
+
+- Submitted on time
+- Submitted correctly
+- Files are named correctly
+- Folders are named correctly","
+",,"
+",,"
+",,"
+",,"
+",
+"20"
+v.11p
