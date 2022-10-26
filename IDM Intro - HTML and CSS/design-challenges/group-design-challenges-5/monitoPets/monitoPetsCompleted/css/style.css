@@ -121,6 +121,9 @@ li {
     display: flex;
     font: var(--body-medium-bold);
     color: var(--primary-dark-blue);
+    min-width: 42rem;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .navbar__list-logo {
@@ -131,16 +134,10 @@ li {
 .navbar__list--left {
     display: flex;
     gap: 10px;
-    min-width: 42rem;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .navbar__list--right {
-    min-width: 42rem;
-    justify-content: space-between;
     margin-left: auto;
-    align-items: center;
 }
 
 .navbar__list-button {
