@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet" />
+
+    <!-- This is how to add the little icon next to the title of a webpage. It is called FAVICON.
+    Again, we use the element <link> to request this resource when our webpage loads -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+    <!-- Just as the fonts, we use a <link> element to link to an EXTERNAL stylesheet. Using external stylesheets is better as HTML is just for structure
+    and CSS is for styles. So HTML and CSS serve different purposes -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- So open the stylesheet "style.css" that is located in folder CSS -->
+
+    <title>Pricing Panel Challenge</title>
+</head>
+
+<body>
+    <div id="pricing-panel">
+        <h1>Choose the right plan for you.</h1>
+        <span id="left-pricing">
+            <img src="images/SVG/cook-illustration.svg" alt="Cook Illustration" />
+            <h2>Personal</h2>
+            <p id="left-pricing-text">Tips and tricks for trendy angles & shots</p>
+            <span id="price">Free</span>
+            <!-- You can use a line break to stack two inline elements that were next to each other -->
+            <br />
+            <a id="left-price-button" href="">Sign Up</a>
+        </span>
+        <span id="middle-pricing">
+            <img src="images/SVG/singer-illustration.svg" alt="Singer Illustration" />
+            <h2 id="small-team-heading">Small Team</h2>
+            <p>Smart Tools to record the world's next hit in seconds</p>
+            <span id="middle-price">$150</span>
+            <br />
+            <a id="middle-price-button" href="">Free Trial</a>
+        </span>
+        <span id="right-pricing">
+            <img src="images/SVG/social-media-illustration.svg" alt="Social Media Manager Illustration" />
+            <h2>Enterprise</h2>
+            <p>Get all the tools you need to upgrade your followers account</p>
+            <span id="price">$400</span>
+            <br />
+            <a id="right-price-button" href="">Sign Up</a>
+        </span>
+    </div>
+</body>
+
+</html>
