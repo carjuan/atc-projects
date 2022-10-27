@@ -1,0 +1,128 @@
+/* resets every marign and padding on an element */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f5f5dc;
+    font-family: "Poppins", sans-serif;
+}
+
+h2,
+h1 {
+    color: #6a62b6;
+}
+
+h1 {
+    padding: 40px 0px;
+    text-align: center;
+}
+
+#pricing-panel {
+    width: 90vw;
+    height: 54;
+    background-color: #e1ddfc;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 10px;
+    text-align: center;
+    padding-bottom: 6%;
+}
+
+#left-pricing {
+    width: 300px;
+    background-color: #f5f5dc;
+    display: inline-block;
+    margin-left: 5%;
+    margin-right: 40px;
+    border-radius: 15px;
+    text-align: center;
+    vertical-align: top;
+    color: #9b9b9c;
+    padding: 10px 0 40px 0;
+}
+
+#middle-pricing {
+    width: 300px;
+    background-color: #7068b9;
+    display: inline-block;
+    text-align: center;
+    margin-right: 40px;
+    border-radius: 15px;
+    color: #f5f5dc;
+    padding: 10px 0 40px 0;
+}
+
+#right-pricing {
+    width: 300px;
+    background-color: #f5f5dc;
+    padding: 10px 0 40px 0;
+    display: inline-block;
+    text-align: center;
+    border-radius: 15px;
+    vertical-align: top;
+    color: #9b9b9c;
+}
+
+#price {
+    font-size: 30px;
+    color: #6a62b6;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 20%;
+}
+
+#middle-price {
+    margin-top: 20%;
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#small-team-heading {
+    color: white;
+}
+
+img {
+    width: 250px;
+    height: 200px;
+}
+
+p {
+    padding: 20px;
+    font-weight: 300;
+}
+
+#left-price-button {
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid #6a62b6;
+    border-radius: 10px;
+    padding: 8px 35px;
+    margin-top: 20px;
+    color: #6a62b6;
+}
+
+#middle-price-button {
+    text-decoration: none;
+    display: inline-block;
+    background-color: #f5f5dc;
+    border-radius: 10px;
+    padding: 10px 35px;
+    margin-top: 20px;
+    color: #6a62b6;
+    font-weight: 600;
+}
+
+#right-price-button {
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid #6a62b6;
+    border-radius: 10px;
+    padding: 8px 35px;
+    margin-top: 20px;
+    color: #6a62b6;
+}
