@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <!-- This section is needed for the font-family to work. Make sure you paste the
+     link Google Provides when choosing your font! -->
+    <link rel="stylesheet" href="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet" />
+    <!-- Google Link Section -->
+
+    <title>Student Business Card</title>
+    <style type="text/css">
+        /* lets add some nice background first */
+        body {
+            background-color: #e0e1df;
+
+            /* lets change the font to something nicer! */
+            /* go to this website and pick your favorite https://fonts.google.com/ */
+            /* I picked the Oswald font which is this link: https://fonts.google.com/specimen/Oswald */
+            /* I chose medium 500. Make sure to copy the link they provided in the HEAD section of the HTML document */
+            font-family: "Oswald", sans-serif;
+        }
+
+        /* just applying border doesnt seem to do anything 
+        it needs something else like a width and a height */
+        #business-card-container {
+            border: 4px solid black;
+
+            /* as soon as we apply the width and the height, we have a box of
+            that demension */
+            width: 400px;
+            height: 350px;
+
+            /* lets add some radius to the card as you can see not every credit card is
+            just a straight square */
+            border-radius: 10px;
+            /* that looks better with those rounded corners */
+
+            /* lets also center a little bit our business card, I think it will look nicer */
+            margin-left: 35%;
+        }
+
+        /* Lets bring the H1 heading to the center */
+        h1 {
+            /* Lets add some margin to center a little bit our business heading card of our element */
+            margin-left: 35%;
+
+            /* For now we are going to solve the problem of the width of the bottom line in 
+        heading one by setting a specific width. Later, I will show you how we can solve
+        this problem more elegantly */
+            width: 412px;
+        }
+
+        em {
+            /* lets add some border bottom to make it stand out! */
+            /* But only put a border to the student section which can be your name or something else where
+         you want to stand out part of the heading but not all the heading */
+            border-bottom: 6px solid black;
+        }
+
+        img {
+            /* wow, that image is huge! We need to make some adjustments. Make it fit in the card! */
+            width: 120px;
+            height: 110px;
+            /* that looks a little bit better, right? */
+            border-radius: 60px;
+
+            /* lets move it to the center as well, using... YES, margin again */
+            margin-left: 10%;
+            /* Notice that margin 30% is from the container <div> element and not the body element */
+            /* Notice also the that margin-left is using percentage over px which stands for pixels. */
+
+            /* % use: The browser knows how to handle percentage since it calculates the space it needs to be moved
+            as long as there is some container to compare */
+
+            /* lets add some space at the top for the image */
+            margin-top: 10px;
+        }
+
+        h2 {
+            /* lets center our name in the card */
+            margin-left: 15%;
+
+            /* lets remove the marign bottom of h2 elements that are placed by the browser by default so that
+            the small elements can go right beneath the name of the business person */
+            margin-bottom: 0;
+
+            /* lets add some emphasis on the name of the card */
+            /* if you notice closely, the border goes all the way to the end of card
+        which is not what we want. For now lets solve this problem by setting a specific width
+        for this heading */
+            border-bottom: 4px solid black;
+
+            /* For now we are going to solve the problem of the border bottom expanding all the way to the
+        end of card by setting a specific width for this element */
+            /* The width has to be the less than the card size and more than the text size of the
+        h2 element */
+            width: 140px;
+        }
+
+        small {
+            margin-top: 0;
+            margin-left: 15%;
+        }
+
+        /* Remember to have a width and height for the browser to understand to display the box
+      that you expect */
+        #business-card-top-purple {
+            /* set the width of the blue box */
+            width: 400px;
+            height: 20px;
+            background-color: #7474d6;
+            border-top-left-radius: 7px;
+            border-top-right-radius: 7px;
+        }
+
+        #business-card-bottom-purple {
+            width: 400px;
+            height: 20px;
+            background-color: #7474d6;
+            border-bottom-left-radius: 7px;
+            border-bottom-right-radius: 7px;
+        }
+
+        /* This is the style of the top box cian color.  */
+        /* we need to setup a width of 100 percentage so that the browser understands that the box needs to take 100%
+      of the width of the page */
+        #top-box-cian {
+            width: 100%;
+
+            /* As for height, we do not need to set it to 100% as we do not want to be as big as the screen.
+        we just want to set the height to 100px units. We will talk about unit later (px, %, vw, vh, em, rem) */
+            height: 100px;
+            background-color: #30e3ca;
+
+            /* lets add some border radius to the top box */
+            border-radius: 10px;
+        }
+
+        /* This is the style for the bottom long blue box below the business card */
+        #bottom-box-blue {
+            /* we need to setup a width of 100 percentage so that the browser understands that the box needs to take 100%
+        of the width of the page */
+            width: 100%;
+
+            /* As for height, we do not need to set it to 100% as we do not want to be as big as the screen.
+        we just want to set the height to 100px units. We will talk about unit later (px, %, vw, vh, em, rem) */
+            height: 100px;
+            background-color: #2f89fc;
+
+            /* We add a little bit of margin to the top as we do not need it to be close to the business card! */
+            margin-top: 30px;
+
+            /* lets add some radius to the borders as well */
+            border-radius: 10px;
+        }
+
+        /* Finally, lets center our list of information in our business card */
+        ul {
+            margin-left: 8%;
+            /* That looks better. The list is centered just like all the rest of the content
+        in the business card. Notice that we apply the style of margin-left to the parent container
+        of the list which is the <ul> element and not the <li> element. The <li> elements are the children of
+        <ul>. */
+        }
+
+        li {
+            list-style-type: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Here we can add a little top ribbon to style more our business card -->
+    <div id="top-box-cian"></div>
+
+    <!-- To have the Student part only an underline, we need to use an em element which is a inline-element. You can start researching what
+    the difference between inline-element and block-element is. Look it up! We will talk about it next week. -->
+    <h1><em>Student</em> Business Card Example</h1>
+
+    <!-- lets talk about div: which are simply a container for other elements
+    <div></div> element is like a container for other elements to live or be displayed
+    lets see it in action -->
+    <div id="business-card-container">
+        <!-- NOTE:this div element is the color blue at the top of the business card -->
+        <!-- see that if we remove the id, all divs follow the same rule, so we need to specify an id 
+      for this <div></div> element to be unique -->
+        <div id="business-card-top-purple"></div>
+
+        <!-- insert this image after styling h1 and div -->
+        <img src="images/circle.jpg" />
+
+        <!-- Insert this information after inserting and styling your image -->
+        <!-- lets add our name in the card -->
+        <h2>Student Name</h2>
+        <small>Advisor</small>
+        <!-- Notice that if the div is not big enough, you will run out of space and no more content can be added.
+        However, you can increase the height of the div element in the style section! -->
+
+        <!-- This <ul> tag is used to tell the browser that an UNORDERED list is about to start using the <li> element</li> -->
+        <ul>
+            <!-- here lists the phone number -->
+            <li>431.865.3345</li>
+            <li>johndow@gmail.com</li>
+
+            <!-- see that the <li></li> elements has some other elements inside, like links! -->
+            <li>
+                <!-- what if we want the browser to open the link in a new tab and not in the same window? -->
+                <!-- Yes, we use the the "target" attribute for the <a></a> element -->
+                <a href="https://www.scotiabank.com/ca/en/personal.html" target="_blank">Go to My Business</a>
+            </li>
+        </ul>
+        <div id="business-card-bottom-purple"></div>
+
+        <!-- NOTE: Remember to be orginized, now move the image "business-man.jpg" -->
+        <!-- to its own folder and use relative paths to tell the browser where tp get the -->
+        <!-- image from -->
+    </div>
+
+    <div id="bottom-box-blue"></div>
+</body>
+
+</html>
