@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Divs Lesson</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            height: 2000px;
+        }
+        p {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        /* you see how the h1 is a BLOCK level elements because it takes the full width of the page by default and creates a new line
+        for new elements to go below it. */
+        h1 {
+            text-align: center;
+            background-color: aqua;
+            border: 2px solid black;
+        }
+
+        h2 {
+            text-align: center;
+            background-color: aquamarine;
+            border: 2px solid black;
+            
+            /* See how these properties of margin-top and margin-bottom work? they work as long as the element is a BLOCK element like h2 */
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        i {
+            background-color: yellow;
+        }
+
+
+         /* I am styling the INLINE elements like the <b></b> */
+        b {
+            border: 2px solid blue;
+            background-color: aquamarine;
+        }
+
+        #trick-heading {
+            text-align: start;
+        }
+
+        #span-width {
+            margin-right: 20px;
+            /* DISPLAY:INLINE-BLOCK tells the browser that INLINE elements should have some of the PROPERTIES of BLOCK elements like: width, height, margin-top, margin-bottom. */
+            display: inline-block;
+
+            /* The code below ONLY works if you have set DISPLAY: INLINE-BLOCK */
+            height: 200px;
+            border: 2px solid black;
+            background-color: aqua;
+        }
+
+        #span-width-height {
+            /* DISPLAY:INLINE-BLOCK tells the browser that INLINE elements should have some of the PROPERTIES of BLOCK elements like: width, height, margin-top, margin-bottom. */
+            display: inline-block;
+
+            height: 200px;
+            width: 400px;
+            border: 2px solid black;
+            background-color: aqua;
+        }
+        
+        #span-box-no-content {
+            display: inline-block;
+            width: 200px;
+            height: 100px;
+            background-color: aquamarine;
+        }
+        
+        #span-with-vertical-align {
+            display: inline-block;
+            width: 400px;
+            height: 200px;
+            border: 2px solid black;
+            background-color: aqua;
+            vertical-align: top;
+        }
+
+        #parent {
+            width: 400px;
+            height: 200px;
+            background-color: aqua;
+            /* Make sure you have border in the div element for the margin to work on NESTED elements, like the h3 */
+            border: 4px solid black;
+            /* Any element that has text in it, we can center it. Just indicate to the container box (div element) to center;
+            the children element (h3 element) */
+            text-align: center;
+        }
+        
+        #blue-box {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+        
+        #red-box {
+            width: 300px;
+            height: 200px;
+            background-color: red;
+        }
+
+        #yellow-box {
+            width: 400px;
+            height: 200px;
+            background-color: yellow;
+        }
+        h3 {
+            margin-top: 50px;    
+            background-color:aquamarine;
+            padding: 20px;
+            font-size: 28px;
+        }
+
+        #margin-box-percentage {
+            background-color: blueviolet;
+            height: 80px;
+            width: 500px;
+            margin-left: 40%;
+        }
+
+        #margin-box-pixel {
+            background-color: rgb(43, 128, 226);
+            height: 80px;
+            width: 500px;
+            margin-left: 500px
+        }
+    </style>
+</head>
+<body>
+
+    <!-- GO TO THIS WEBSITE TO CHECK MORE ABOUT <div>: https://www.w3schools.com/tags/tag_div.ASP -->
+    
+    <!-- 
+    A div element is a indication of a section that contains or groups more elements so that, with CSS, we can easily style with
+    margin, border, width, height, etc. 
+     -->
+     <h1>Lets talk about a special element, the <b><i>div</i></b> element</h1>
+
+    <h2>This element helps us <b><i>GROUP</i></b> and <b><i>NEST</i></b> more elements</h2>
+
+    <div id="parent">
+        <!-- Notice that for elements to be NESTED, you have to put content inside the div element -->
+        <!-- 
+        - Elements like <h3></h3> can have their own margin WITHIN the box.
+        - What box? The div element can be seen like BOX, a CONTAINER for other elements, in this case, the <h3></h3> element is NESTED inside the <div></div> -->
+        <p>Hello World! I am learning Web Design and Development at LRSD</p>
+    </div>
+
+    <h2>You do not always need to have more <b><i>NESTED</i></b> elements, you can create just boxes!</h2>
+    
+    <!-- With the help of CSS, we can design the divs the way we want as long as we have: width, height, backgroun-color; -->
+    <div id="blue-box"></div>
+    <div id="red-box"></div>
+    <div id="yellow-box">
+         
+    </div>
+
+    <h2>You can move block elements (divs) in the horizontal axis using width, height and margin</h2>
+    <h3>- Margin can be in percentage value!</h3>
+
+    <!-- divs are awesome, they helps contain more element and create better pages -->
+    <div id="margin-box-percentage">
+        <!-- Notice that for elements to be NESTED, you have to put content inside the div element -->
+        <!-- 
+        - Elements like <h3></h3> can have their own margin WITHIN the box.
+        - What box? The div element can be seen like BOX, a CONTAINER for other elements, in this case, the <h3></h3> element is NESTED inside the <div></div> -->
+        <p>Hello World! I am learning Web Design and Development at LRSD</p>
+    </div>
+    <h3>- Or in pixels value!</h3>
+    <div id="margin-box-pixel">
+        <!-- Notice that for elements to be NESTED, you have to put content inside the div element -->
+        <!-- 
+        - Elements like <h3></h3> can have their own margin WITHIN the box.
+        - What box? The div element can be seen like BOX, a CONTAINER for other elements, in this case, the <h3></h3> element is NESTED inside the <div></div> -->
+        <p>Hello World! I am learning Web Design and Development at LRSD</p>
+    </div>
+</body>
+</html>
