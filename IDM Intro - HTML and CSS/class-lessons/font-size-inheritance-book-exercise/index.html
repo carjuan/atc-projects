@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Font sizes inheritance</title>
+</head>
+<!-- This is exercise is based on page 329 of the book Head First HTML and CSS -->
+
+<body style="font-size: 14px">
+  <!-- The font-size for the following heading is 16.8px based on 14px * 1.2 -->
+  <h1 style="font-size: 1.2em">I am a heading one level</h1>
+  <!-- The following font-size for the paragraph is 32px -->
+  <p style="font-size: 2rem">I am a paragraph</p>
+  <!-- Font-size for the following div is 21px based on parent: 14px -->
+  <div style="font-size: 150%">
+    <!-- for the following paragrah 42px based on parent 150% -->
+    <p style="font-size: 2em">I am a paragraph inside a div element</p>
+    <!-- for the following paragrah 32px based on root 16px -->
+    <p style="font-size: 2rem">I am second paragraph inside a div element</p>
+  </div>
+</body>
+
+</html>

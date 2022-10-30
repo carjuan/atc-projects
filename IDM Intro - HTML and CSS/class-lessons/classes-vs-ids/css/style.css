@@ -3,7 +3,7 @@ body {
 }
 
 /* ----------------------------------------- Classes Section ----------------------------------- */
-#section-classes {
+#buttons {
     display: flex;
     flex-direction: column;
     border: 2px solid darkblue;
@@ -15,7 +15,7 @@ body {
     margin-bottom: 60px;
 }
 
-.button {
+.buttons__button {
     padding: 18px 24px;
     background-color: aqua;
     text-decoration: none;
@@ -24,7 +24,7 @@ body {
     color: black;
 }
 
-.danger-button {
+.buttons__button--red {
     background-color: brown;
 }
 
