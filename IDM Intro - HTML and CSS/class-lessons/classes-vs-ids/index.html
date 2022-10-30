@@ -4,6 +4,8 @@
         <meta charset="UTF-8" >
         <meta http-equiv="X-UA-Compatible" content="IE=edge" >
         <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <!-- Notice here that we are using external stylesheets from embedded styleesheets. -->
+        <!-- This is better as we separate our concerns (style vs structure) -->
         <link rel="stylesheet" href="css/style.css" >
         <title>Classes vs Ids</title>
     </head>
@@ -21,11 +23,11 @@
                     styles to different elements on the page, sharing the same style among them.
         -->
         </style>
-        <section id="section-classes">
-            <a class="button" href="">Click</a>
-            <a class="button" href="">Click</a>
-            <a class="button danger-button" href="">Click</a>
-            <a class="button button-no-margin" href="">Click</a>
+        <section id="buttons">
+            <a class="buttons__button" href="">Click</a>
+            <a class="buttons__button" href="">Click</a>
+            <a class="buttons__button buttons__button--red" href="">Click</a>
+            <a class="buttons__button" href="">Click</a>
         </section>
         <section id="section-ids">
             <a id="button-1" href="">Click</a>
