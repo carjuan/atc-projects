@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity and Cascade Class Lesson</title>
+    <style>
+        body {
+            background: bisque;
+        }
+
+        #hello {
+            color: purple;
+        }
+
+        p {
+            color: blue;
+        }
+
+        p.greentea {
+            color: red;
+        }
+
+        p.greentea span {
+            color: aqua;
+        }
+
+        span {
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- This is where you will appreciate BEM class naming system since you are only using classnames for evey elements. So,
+    specificity will not be a problem when your site grows in complexity -->
+
+    <!-- This stylesheet will override any styles applied in the <style></style> element inside the head -->
+    <link rel="stylesheet" href="css/main.css">
+
+
+    <!-- An ID selector will be preferred over classnames -->
+    <p id="hello" class="greentea">P1</p>
+    <p class="greentea">
+        P2
+        <span>inside P2</span>
+    </p>
+    <!-- Inline styles will be preferred over <link> and <style></style> elements -->
+    <p style="color:green;">P3</p>
+</body>
+
+</html>
