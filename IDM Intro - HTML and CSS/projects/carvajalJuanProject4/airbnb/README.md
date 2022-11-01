@@ -4,7 +4,7 @@
 
 ## The project
 
-Your project is to build out a "almost" an Airbnb clone which is certainly missing a lot of features from the [original](https://www.airbnb.ca/), but we will learn those concepts later in the course to be a 'real' clone. For now, get it looking as **close** to the design as possible.
+Your project is to build out an "almost" Airbnb clone which is certainly missing a lot of features from the [original](https://www.airbnb.ca/), but we will learn those concepts later in the course to be a 'real' clone. For now, get it looking as **close** to the design as possible.
 
 You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go. Remember, you can always go and check previous design challenges/projects in the course and use the CSS learned for this and future projects.
 
@@ -40,6 +40,11 @@ Your task is to build out the project to the designs inside the `/design` folder
 The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`.
 
 There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+
+## Images
+
+- Width: 280px;
+- Height 250px;
 
 ## Building your project
 
