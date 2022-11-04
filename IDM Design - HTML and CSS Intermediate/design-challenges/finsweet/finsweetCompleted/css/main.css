@@ -1,0 +1,129 @@
+/* NAVBAR */
+
+.navbar {
+    background-color: var(--black);
+}
+
+.navbar__list-container {
+    display: flex;
+    padding-block: 1.5625rem;
+    align-items: center;
+}
+
+.navbar__list-links {
+    margin-left: auto;
+}
+
+.navbar__list {
+    display: flex;
+    justify-content: space-between;
+    min-width: 526px;
+    align-items: center;
+}
+
+.navbar__list-link {
+    padding: 0.6rem 0;
+}
+
+.navbar__list-link:hover {
+    border-bottom: 2px solid var(--white);
+}
+
+.navbar__list-button {
+    padding: 1rem 3rem;
+    background-color: var(--white);
+    font: var(--body03-bold);
+}
+
+/* HERO SECTION */
+
+.hero {
+    background: no-repeat center url("../assets/images/hero.jpg");
+    background-size: cover;
+    min-height: 720px;
+
+    /* inset | offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: inset 60px -60px 100px 310px rgba(0, 0, 0, 0.705);
+}
+
+.hero__container {
+    padding-top: 8rem;
+}
+
+.hero__content {
+    color: white;
+}
+.hero__content--small {
+    text-transform: uppercase;
+}
+
+.hero__content--small-bold {
+    font: var(--body03-bold);
+}
+.hero__content--heading {
+    font: var(--display);
+    margin-block: 1.5rem;
+}
+
+.hero__content--author {
+    color: var(--yellow);
+}
+
+.hero__content--description {
+    margin-block: 1.5rem;
+}
+
+/* SECTION DIVISION */
+.section-division {
+    margin-block: 2rem;
+}
+
+/* COLOR DIVISION */
+.mission-description {
+    background: var(--lavender);
+}
+.color-division {
+    height: 23px;
+    text-align: right;
+}
+
+.color-division__color {
+    display: inline-block;
+    height: 100%;
+    vertical-align: top;
+}
+
+.color-division__yellow {
+    background-color: var(--yellow);
+    width: 50%;
+}
+
+.color-division__purple {
+    background-color: var(--purple);
+    width: 20%;
+}
+
+/* MISSION DESCRIPTION */
+
+.mission-description__content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-block: 96px;
+}
+
+/* FINSWEET STORY */
+.finsweet-story__background {
+    background: no-repeat center url("../assets/images/close-up-photography-of-man-wearing-sunglasses-1212984.jpg");
+    min-height: 705px;
+    background-position: left 80px top 0;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.finsweet-story__container {
+    width: 50%;
+    background: var(--white);
+    padding: 80px;
+}

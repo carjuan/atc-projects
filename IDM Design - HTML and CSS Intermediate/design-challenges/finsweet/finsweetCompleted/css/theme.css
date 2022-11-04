@@ -1,0 +1,41 @@
+@font-face {
+    font-family: "Sen";
+    src: url("../fonts/sen/sen-bold.otf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Sen";
+    src: url("../fonts/sen/sen-medium.otf");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Sen";
+    src: url("../fonts/sen/sen-regular.otf");
+    font-weight: 400;
+}
+
+:root {
+    /* TYPOGRAPHY */
+    --display: 700 3.5rem/4rem "Sen";
+    --heading-h1: 700 3rem/4rem "Sen";
+    --heading-h2: 700 1.7rem/1.8rem "Sen";
+    --heading-h3: 600 1.75rem/2.25rem "Sen";
+    --body01-regular: 400 1rem/1.75rem "Sen";
+    --body02-regular: 400 0.875rem/1.25rem "Sen";
+    --body03-bold: 600 1rem "Sen";
+    --body03-regular: 400 1.2rem "Sen";
+
+    /* COLORS */
+    --black: #232536;
+    --yellow: #ffd050;
+    --purple: #592ea9;
+    --dark-grey: #4c4c4c;
+    --medium-grey: #6d6e76;
+    --lavender: #eeecf0;
+    --white: #fff;
+
+    /* HOVER */
+    --button-hover: #edc14a;
+}

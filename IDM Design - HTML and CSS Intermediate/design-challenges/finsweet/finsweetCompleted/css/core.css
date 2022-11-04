@@ -1,0 +1,71 @@
+/* BASE STYLES */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    line-height: 1.5;
+    font: var(--body01-regular);
+    color: var(--black);
+}
+
+input,
+button {
+    background-color: transparent;
+    font: inherit;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* WRAPPER */
+
+.wrapper {
+    max-width: 1440px;
+    margin: auto;
+    padding-inline: 5rem;
+}
+
+.button {
+    padding: 1rem 3rem;
+    background: var(--yellow);
+    font: var(--body03-bold);
+}
+
+/* CONTENT */
+
+.content__heading {
+    font: var(--body03-regular);
+    text-transform: uppercase;
+}
+
+.content__subheading {
+    font: var(--heading-h2);
+    margin-block: 1rem;
+}
+
+.content__description {
+    margin-block: 16px;
+}
+
+.content__link {
+    color: var(--purple);
+    font: var(--body03-bold);
+}
