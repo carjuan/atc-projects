@@ -10,16 +10,16 @@ You can use any tools you like to help you complete the challenge. So if you've 
 
 ### Mandatory
 
--   From now on, your projects should follow BEM: [BEM class naming convention](https://getbem.com/naming/) or checkout this [this article](https://css-tricks.com/bem-101/)
+- From now on, your projects should follow BEM: [BEM class naming convention](https://getbem.com/naming/) or checkout this [this article](https://css-tricks.com/bem-101/)
 
--   Use CSS variables: [CSS variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
--   You must orginize your CSS (using external stylesheets)
+- Use CSS variables: [CSS variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
+- You must orginize your CSS (using external stylesheets)
 
--   You should make use of Flexbox and all its properties
+- You should make use of Flexbox and all its properties
 
--   You must start, whenever possible, using [REM units](https://www.w3schools.com/cssref/css_units.asp) units for specifying, widths, heights, fonts, etc. This improves the accessibility of your website. Check more about [Accessible responsive design](https://web.dev/accessible-responsive-design/)
+- You must start, whenever possible, using [REM units](https://www.w3schools.com/cssref/css_units.asp) units for specifying, widths, heights, fonts, etc. This improves the accessibility of your website. Check more about [Accessible responsive design](https://web.dev/accessible-responsive-design/)
 
--   Your document has to be semantic, check [semantic HTML](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#semantics_in_html) (divs are ok just for styling purposes)
+- Your document has to be semantic, check [semantic HTML](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#semantics_in_html) (divs are ok just for styling purposes)
 
 ## Where to find everything
 
