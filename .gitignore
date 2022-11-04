@@ -65,3 +65,7 @@
 # 3D Images
 *.3dm
 *.max
+
+
+# Fonts
+*.otf
