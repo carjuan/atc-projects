@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: brown;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+                "Open Sans", "Helvetica Neue", sans-serif;
+            color: #be49a4;
+            font-size: 2rem;
+        }
+
+        .parent {
+            width: 600px;
+            height: 800px;
+            background-color: blue;
+        }
+
+        .child {
+            width: 300px;
+            height: 400px;
+            background-color: red;
+            position: relative;
+        }
+
+        .child::after {
+            content: "";
+            width: 200px;
+            height: 100px;
+            background-color: black;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+
+        .child-2 {
+            width: 300px;
+            height: 400px;
+            background-color: purple;
+            position: absolute;
+            bottom: -300px;
+            right: 0;
+            transform: rotate(32deg);
+            border-radius: 20px;
+        }
+
+        .vector-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .vector {
+            width: 1177px;
+            background-color: #e1afd6;
+            padding: 4rem;
+        }
+
+        p {
+            color: #9e6291;
+            font-weight: lighter;
+            line-height: 1.5;
+            margin-block: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child"></div>
+        <img src="" alt="" />
+        <div class="child-2"></div>
+    </div>
+
+    <div class="vector-container">
+        <svg width="1177" height="195" viewBox="0 0 1177 195" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M-53 167.5C-42.5 155.5 -11.5 7.49997 239.5 87.5C490.5 167.5 653.5 181.5 755.5 98C857.5 14.5 1014.5 174.5 1139.5 125.5C1239.5 86.3 1319.5 25.5 1347 0L1165.5 352.5C965.667 377.833 560 427 536 421C506 413.5 66 330 6.5 318C-41.1 308.4 -53 213.667 -53 167.5Z"
+                fill="#E1AFD6" />
+        </svg>
+        <div class="vector">
+            <h1>Awesome Product Desription</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed reprehenderit adipisci sunt quis
+                voluptatum. Perspiciatis, non, exercitationem harum ut iusto est aut fuga ratione adipisci similique
+                ipsa blanditiis, doloremque inventore!
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
