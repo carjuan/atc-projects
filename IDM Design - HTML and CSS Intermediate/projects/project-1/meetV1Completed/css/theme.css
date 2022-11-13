@@ -1,0 +1,14 @@
+:root {
+    /* COLOR */
+    --primary: #32f5c8;
+    --secondary: #013243;
+    --white: #a9bdc6;
+    --blue: #00acee;
+    --secondary-transparent: #2e6f861a;
+
+    /* TYPOGRAPHY */
+    --h1: 700 10rem/1 "Sen", sans-serif;
+    --h1-bold: 800 3.8rem/1.2 "Sen", sans-serif;
+    --body-regular: 400 1.8rem/1.4 "Inter", sans-serif;
+    --body-bold: 700 1.8rem/1.2 "Inter", sans-serif;
+}
