@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: auto;
+}
+
+.align {
+    padding-left: 1rem;
+}
+
+body {
+    color: var(--white);
+    background: var(--secondary);
+    font: var(--body-regular);
+    padding-inline: 2rem;
+}
+
+li {
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 h6 {
+    color: var(--primary);
+}
+
+/* by default links do not inherit font or color */
+/* You have to explicitly indicate to inherit those properties */
+/* from parent elements */
+button,
+a {
+    text-decoration: none;
+    font: inherit;
+    color: inherit;
+}
+
+p {
+    margin-block: 1rem;
+}
+
+.button {
+    padding: 1.2rem 1.8rem;
+    border: none;
+    background: var(--primary);
+    border-radius: 8px;
+    display: inline-block;
+    color: var(--secondary);
+    font: var(--body-bold);
+    transition: transform 500ms ease-in-out, background-color 500ms linear;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: var(--white);
+    transform: scale(1.1, 1.2) rotate(5deg);
+}
+
+.button__link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--white);
+    justify-content: center;
+}
+
+.button__text {
+    font: var(--body-bold);
+    white-space: nowrap;
+}
