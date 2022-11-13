@@ -1,0 +1,101 @@
+/* NAVBAR */
+
+.header {
+    background-color: var(--secondary-transparent);
+    z-index: -1;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    padding-inline-end: 2rem;
+    padding-block: 2rem;
+    margin-block: 2rem;
+}
+
+.navbar__image {
+    width: 170px;
+    height: 60px;
+}
+
+/* HERO */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+    min-height: 720px;
+    position: relative;
+}
+
+.hero__images {
+    position: absolute;
+    z-index: -1;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.hero__image {
+    position: absolute;
+}
+
+.hero__image--bottom-right {
+    bottom: 0;
+    left: 79%;
+}
+
+.hero__image--right-top-mid {
+    right: 0.5%;
+    top: 35%;
+}
+
+.hero__image--right-top {
+    right: 2%;
+    top: -10%;
+}
+
+.hero__image--top-almost-right {
+    right: 35%;
+    top: -5%;
+}
+
+.hero__image--left-top {
+    left: -7%;
+    top: -3%;
+}
+
+.hero__heading-image-container {
+    position: relative;
+    width: 100%;
+}
+.hero__heading {
+    font: var(--h1);
+}
+
+.hero__heading-text-back {
+    z-index: -2;
+    position: relative;
+}
+
+.hero__image-in-heading {
+    position: absolute;
+    bottom: 0;
+    bottom: -27%;
+    left: 625px;
+    z-index: -1;
+}
+
+.hero__footer {
+    display: flex;
+    align-items: center;
+    margin-block: 4rem;
+}
+
+.hero__link {
+    padding-inline: 2rem;
+}
+
+.hero__twitter-icon {
+    height: 48px;
+}
