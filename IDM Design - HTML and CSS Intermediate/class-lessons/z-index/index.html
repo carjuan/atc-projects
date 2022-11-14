@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <title>Z - Index</title>
+    </head>
+
+    <body>
+        <h1>Z - Index</h1>
+        <h2>Normal document flow</h2>
+        <div class="normal-flow normal-flow-1"></div>
+        <div class="normal-flow normal-flow-2"></div>
+        <h2>Position and z-index</h2>
+        <p>First, position your elements</p>
+        <div class="normal-flow normal-flow-3 position-relative"></div>
+        <div class="normal-flow normal-flow-4 position-relative"></div>
+        <div class="normal-flow normal-flow-5 position-relative"></div>
+        <p>As long as an element is positioned relative, fixed or absolute, you can change the property z-index</p>
+        <div class="position-relative">
+            <div class="normal-flow normal-position-flow-3 position-absolute"></div>
+            <div class="normal-flow normal-position-flow-4 position-absolute"></div>
+            <div class="normal-flow normal-position-flow-5 position-absolute"></div>
+        </div>
+    </body>
+</html>
