@@ -1,0 +1,74 @@
+"For the best editing experience, upload this .csv as a rubric in Microsoft Teams."
+
+"IDM Design - Project 1 - Meet Rubric","100"
+"Rubric for the first project on IDM Design - HTML and CSS Intermediate"
+""
+,"Exceptional","10","Meets Most Requirements","7","Meets Some Requirements","5","Developing/Needs Improvement","3","Failed to Achieve Outcome","1"
+"Visual Layout
+
+- Page looks like the design provided or created
+- Margins, spacing and padding are similar 
+- Font is displayed properly
+- Colors match design
+- Content is centered with a max-width of 1440p
+- Button is uses transitions
+- Link has a title attribute","
+",,"
+
+",,"
+",,"
+",,"
+",
+"30"
+"CSS
+
+- Appropriate CSS selectors are used 
+- BEM class system used properly
+- CSS has proper indentation
+- Classes are used to select HTML elements
+- Proper CSS syntax is maintained: selector, curly braces, property, colon, value, semicolon
+- Font types are similar to design
+- Font shorthand is used
+- Font sizes/weight and alignment are similar to design
+- CSS is organized hierarchically using BEM
+- CSS is organized in its own folder
+- Uses core.css, theme.css and main.css appropriately
+- BEM is error-free 
+","
+",,"
+",,"
+",,"
+",,"
+",
+"25"
+"HTML
+
+- HTML5 block elements & divs are used
+- Proper semantic HTML is used for grouping and nesting
+- HTML document has proper indentation, demonstrating correct HTML hierarchy
+- Spelling, grammar, punctuation, etc. 
+- Naming classes has proper meaning to the content being displayed on the page
+- Uses relative paths
+- Indicated elements are used semantically
+- Markup validates without errors","
+",,"
+",,"
+",,"
+",,"
+",
+"25"
+"Edge
+
+- Submitted on time
+- Submitted correctly
+- Files are named correctly
+- Folders are named correctly
+- Research skills are used to search previously unseen CSS properties
+- Research skills are used to identify colors from a design","
+",,"
+",,"
+",,"
+",,"
+",
+"20"
+v.11p
