@@ -68,6 +68,8 @@ Do not move to another section of a webpage if:
 -   transform: scale()
 -   transform: rotate()
 -   z-index
+-   \<a\> HTML attributes
+-   CSS percentage % relative unit values
 
 ## Where to find everything
 
