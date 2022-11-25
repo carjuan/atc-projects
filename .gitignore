@@ -1,6 +1,7 @@
 *.DS_Store
 *.docx
 *.vscode
+Session.vim*
 
 # JPEG
 *.jpg
