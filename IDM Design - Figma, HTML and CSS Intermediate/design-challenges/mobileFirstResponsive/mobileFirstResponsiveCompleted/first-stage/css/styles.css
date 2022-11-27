@@ -1,0 +1,145 @@
+/* THEME */
+:root {
+    --font-sm: 0.875rem;
+    --font-md: 1.125rem;
+    --font-lg: 1.375rem;
+    --font-xl: 1.875rem;
+
+    --lh-sm: 1.2;
+    --lh-md: 1.4;
+    --lh-lg: 1.8;
+    --lh-xl: 2.2;
+
+    --font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+        "Open Sans", "Helvetica Neue", sans-serif;
+
+    --body-regular: 400 var(--font-md) / var(--lh-sm) var(--font-family);
+    --body-large: 300 var(--font-lg) / var(--lh-md) var(--font-family);
+    --h1: 700 var(--font-xl) / var(--lh-md) var(--font-family);
+}
+
+/* CORE */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h6 {
+    margin-block: 1.6rem;
+}
+
+picture {
+    display: block;
+}
+
+section {
+    padding: 2rem;
+}
+
+/* Since my images are going to be based on parent */
+/* I should always based the size of the image on the parent. */
+/* Therefore, always I need the width 100% of the parent */
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p a {
+    display: inline;
+    color: blue;
+    text-decoration: underline;
+}
+
+button,
+input {
+    font: inherit;
+}
+
+button {
+    background: transparent;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+li {
+    list-style-type: none;
+}
+
+body {
+    font: var(--body-regular);
+}
+
+
+/* HEADER */
+
+.header {
+    padding: 2rem;
+}
+
+.navbar__logo-container {
+    max-width: 180px;
+    max-height: 180px;
+    /* This step is needed for masking the child element */
+    /* Rounded corner should always be given to the container and not the image */
+    /* for browser performance  */
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.navbar__company-name {
+    font: var(--body-large);
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
+
+/* *********** MAIN ******** */
+
+/* HERO */
+
+.hero__heading {
+    font: var(--h1);
+}
+
+/* PLANS */
+
+.plans__plan {
+    margin-block: 1.8rem;
+}
+
+/* FOOTER */
+
+.footer {
+    padding: 2rem;
+}
+
+.footer__image {
+    max-width: 5rem;
+    max-height: 5rem;
+    display: inline-block;
+}
+
+.footer__link {
+    margin-right: 1rem;
+    vertical-align: top;
+}
+
+/* TODO: display none should no be used */
+.footer__link--special {
+    display: none;
+}
