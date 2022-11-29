@@ -36,8 +36,14 @@
 
 5.  Background colors are now changing as you change the color of the html element in Firefox Developer Tools
     
-6.  At 600px or more, "Choose your plan heading" and a second "Business link" should appear
+6.  At 600px or more, "Choose your plan" heading and a second "Business link" should appear in footer
 
+7.  "buy this plan" are now buttons
+
+8.  Buy links now have a border-radius of 5px and should have the same border colors
+    as the images.
+
+9.  "buy this plan" button should have a hand cursor effect
 
 ## LAST-STAGE
 
@@ -47,17 +53,9 @@
 
 3.  You are using overflow to mask images and create rounded corners
 
-4.  Pricing plans links are now buttons on 940px screen size or more
+4.  Pricing plans are in a row on 940px screen size or more
 
-5.  Pricing plans are in a row on 940px screen size or more
-
-5.  Buy links now have a border-radius of 5px and should have the same border colors
-    as the images.
-
-6.  Buy links should have background color too
-
-
-7. Header, Main and Footer max-width should be 1200px
+5. Header, Main and Footer max-width should be 1200px
 
 
 ## Breakpoints to guide your design
