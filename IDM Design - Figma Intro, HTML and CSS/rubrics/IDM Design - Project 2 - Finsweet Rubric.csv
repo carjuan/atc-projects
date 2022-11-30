@@ -1,0 +1,75 @@
+"For the best editing experience, upload this .csv as a rubric in Microsoft Teams."
+
+"IDM Design - Project 2 - Finsweet","100"
+"Rubric for the second project on IDM Design - Figma Intro, HTML and CSS"
+""
+,"Exceptional","15","Meets Most Requirements","12","Meets Some Requirements","8","Developing/Needs Improvement","4","Failed to Achieve Outcome","1"
+"Visual Layout
+
+- Pages look like the design provided or created
+- Navigational bar works as intended. Users can click on blog, contact, etc and be redirected to the corresponding page. 
+- Margins, spacing and padding are similar 
+- Font is displayed properly
+- Colors match design
+- Content is centered with a max-width of 1440p
+- Elements have proper :hover effects
+- Links have a title attribute","
+",,"
+
+",,"
+",,"
+",,"
+",
+"30"
+"CSS
+
+- Appropriate CSS selectors are used 
+- BEM class system used properly
+- CSS has proper indentation
+- Classes are used to select HTML elements
+- Proper CSS syntax is maintained: selector, curly braces, property, colon, value, semicolon
+- Font types are similar to design
+- Font shorthand is used
+- Font sizes/weight and alignment are similar to design
+- CSS is organized hierarchically using BEM
+- CSS is organized in its own folder
+- Uses core.css, theme.css, main.css, blog.css, contact.css, etc appropriately
+- BEM is error-free 
+","
+",,"
+",,"
+",,"
+",,"
+",
+"30"
+"HTML
+
+- HTML5 block elements & divs are used
+- Proper semantic HTML is used for grouping and nesting
+- HTML document has proper indentation, demonstrating correct HTML hierarchy
+- Spelling, grammar, punctuation, etc. 
+- Classes have proper meaning to the content being displayed on the page
+- Uses relative paths
+- HTML elements are used semantically
+- Markup validates without errors","
+",,"
+",,"
+",,"
+",,"
+",
+"30"
+"Edge
+
+- Submitted on time
+- Submitted correctly
+- Files are named correctly
+- Folders are named correctly
+- Research skills are used to search previously unseen CSS properties
+- Research skills are used to identify colors from a design","
+",,"
+",,"
+",,"
+",,"
+",
+"10"
+v.11p
