@@ -1,0 +1,67 @@
+"For the best editing experience, upload this .csv as a rubric in Microsoft Teams."
+
+"IDM Design - Figma User Flows, Our First Client Rubric","100"
+"Rubric for the assignment on ""Figma User Flows - Our First Client"""
+""
+,"Exceptional","15","Meets Most Requirements","12","Meets Some Requirements","8","Developing/Needs Improvement","4","Failed to Achieve Outcome","1"
+"Visual Layout
+
+- Flows are one direction
+
+- Flows have branches when the user is not able to complete a step
+
+- Flows are separate and on their own frame with proper name of the flow
+
+- User flows are descriptive and provide enough information to understand the steps an user must take to get from point A to point B
+
+- User flows have indicative elements, like using accent colors, when an user is expected to click or tap on a certain element on the page","
+",,"
+
+",,"
+",,"
+",,"
+",
+"30"
+"File Organization
+
+- All elements have proper names indicating what a particular shape or frame is supposed to be
+
+- There are five pages in the design file ""lastnameFirstnameFirstClientFigma""","
+",,"
+",,"
+",,"
+",,"
+",
+"30"
+"Figma Tools
+
+- Components are located in their own page
+
+- Components' instances are used through the user flows
+
+- Components use auto-layout features
+
+- Components are grouped logically
+
+- Nested elements in components are grouped and/or use auto-layout elements","
+",,"
+",,"
+",,"
+",,"
+",
+"30"
+"Edge
+
+- Submitted on time
+- Submitted correctly
+- File is named correctly
+- All pages are included
+- All user flows are provided with branches if any
+- Research skills are used to search previously unseen Figma features","
+",,"
+",,"
+",,"
+",,"
+",
+"10"
+v.11p
